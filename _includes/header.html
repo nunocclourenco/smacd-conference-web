@@ -10,13 +10,14 @@
       <ul class="nav navbar-nav navbar-right">
         <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Conference<span class="caret"></span></a>
         <ul class="dropdown-menu">
-          <!--li><a href="{{ 'call-for-papers' | relative_url }}">Call for Papers</a></li-->
-          <!--li><a href="{{ 'committees' | relative_url }}">Committees</a></li-->
+          <li><a href="{{ 'call-for-papers' | relative_url }}">Call for Papers</a></li>
+          <li><a href="{{ 'paper-submission' | relative_url }}">Paper Submission</a></li>
+          <li><a href="{{ 'committees' | relative_url }}">Committees</a></li>
           <li><a href="{{ 'previous-editions' | relative_url }}">Previous Editions</a></li>
         </ul>
         </li>
         <!--li ><a href="{{ 'sponsorship' | relative_url }}">Sponsorship</a></li-->
-        <!--li ><a href="{{ 'venue' | relative_url }}">Venue</a></li-->
+        <li><a href="{{ 'venue' | relative_url }}">Venue</a></li-->
         <!--li ><a href="{{ 'contacts' | relative_url }}">Contacts</a></li-->
       </ul>
     </div>
@@ -26,9 +27,10 @@
 
 <div class="header"><div class="container" >
   <img class="carousel-caption-logo" src="{{ 'logo_white.png' | relative_url }}" alt="SMACD 2022, June 2022, Sardinia, Italy"/>
-  <!--div class="btn-box">
+  <div class="btn-box">
     <div class = "btn-group"> 
-    <a href="call-for-papers" target="_blank" class="btn btn-lg btn-block btn-success btn-1">SCHEDULE</a>
-</div--> 
+    <a href="{{ 'call-for-papers' | relative_url }}" target="_blank" class="btn btn-lg btn-block btn-success btn-1" style="margin:5px; width:250px; color:white;">Call for Papers</a>
+    <a href="{{ 'paper-submission' | relative_url }}" target="_blank" class="btn btn-lg btn-block btn-success btn-1" style="margin:5px; width:250px; color:white;">Paper Submission</a>
+  </div> 
 </div> 
 </div></div>	

@@ -47,7 +47,7 @@ h3 { letter-spacing:0pt; }
 .navbar-inverse, .navbar-inverse .navbar-brand, .navbar-inverse .navbar-nav>li>a {background: #fff; letter-spacing:2pt; border-color: #fff;  color:$base-dark-color;}
 .navbar-inverse .navbar-nav>.open>a, .navbar-inverse  .navbar-nav>.open>a:hover,.navbar-inverse  .navbar-nav>.open>a:focus  {background:$base-light; letter-spacing:2pt; border-color: #fff;  color:$base-dark-color;}
 .navbar-inverse .navbar-nav>li>a:hover, .navbar-inverse .navbar-nav>li>a:focus, .navbar-inverse .navbar-brand:hover,.navbar-inverse .navbar-brand:focus { background:$base-light; color: $base-dark-color;}
-.navbar-inverse .dropdown-menu>li>a {color: $base-dark-color; 	font-size: 22px;}
+.navbar-inverse .dropdown-menu>li>a {color: $base-dark-color; 	font-size: 16px;}
 .navbar-inverse .dropdown-menu>li>a:hover,	.dropdown-menu>li>a:focus { background: $base-light; }
 .navbar-inverse .navbar-toggle{  border-color: $base-dark-color;  background-color: $base-dark-color;}
 .navbar-inverse .navbar-toggle:hover{  background-color: $base-dark-color;}
@@ -58,7 +58,7 @@ h3 { letter-spacing:0pt; }
 @media (max-width: 1360px) {
 .navbar-inverse, .navbar-inverse .navbar-nav>li>a { font-size: 18px;}	
 .navbar-inverse .navbar-brand {font-size: 22px;}	
-.navbar-inverse .dropdown-menu>li>a {font-size: 18px;}
+.navbar-inverse .dropdown-menu>li>a {font-size: 16px;}
 }
 @media (min-width: 768px) and (max-width: 992px) {
 .navbar-nav .open .dropdown-menu { position: static; float: none; width: auto; margin-top: 0; background-color: transparent; border: 0;  -webkit-box-shadow: none;box-shadow: none; }
@@ -88,7 +88,7 @@ h3 { letter-spacing:0pt; }
   
 /*btn Start*/
 .btn-box {text-align: left; float: left; width: 920px;}
-.btn-1 {font-size: 24px; letter-spacing:1.2pt; text-transform: uppercase;  margin:25px; width:250px; color:white;}
+.btn-1 {font-size: 20px; letter-spacing:1.2pt; text-transform: uppercase ;}
 .btn-success {
 color: #fff;
 background-color: #8ba70a;
