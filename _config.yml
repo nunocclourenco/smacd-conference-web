@@ -20,7 +20,7 @@
 permalink: pretty
 domain: nunocclourenco.github.io       # if you want to force HTTPS, specify the domain without the http at the start, e.g. example.com
 url: https://nunocclourenco.github.io  # the base hostname and protocol for your site, e.g. http://example.com
-baseurl: /smacd-conference-web      # place folder name if the site is served in a subfolder
+baseurl: /      # place folder name if the site is served in a subfolder
 
 title: SMACD22
 email: nlourenco@lx.it.pt
