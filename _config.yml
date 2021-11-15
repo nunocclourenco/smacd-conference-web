@@ -18,8 +18,11 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 permalink: pretty
-domain: nunocclourenco.github.io       # if you want to force HTTPS, specify the domain without the http at the start, e.g. example.com
-url: https://nunocclourenco.github.io  # the base hostname and protocol for your site, e.g. http://example.com
+domain: smacd-conference.org       # if you want to force HTTPS, specify the domain without the http at the start, e.g. example.com
+url: https://smacd-conference.org
+
+# domain: nunocclourenco.github.io       # if you want to force HTTPS, specify the domain without the http at the start, e.g. example.com
+# url: https://nunocclourenco.github.io  # the base hostname and protocol for your site, e.g. http://example.com
 baseurl: /      # place folder name if the site is served in a subfolder
 
 title: SMACD22
