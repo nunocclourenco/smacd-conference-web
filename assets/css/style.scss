@@ -9,7 +9,7 @@ $alternative-color: #894;
 body { font-family: "Poppins", sans-serif; color: #4a4a4a; text-align: justify; font-size: 16px; padding-top: 50px; }
 
 footer {background-color:#f7f7f7;border-top: 1px solid #ddd;}
-.header {min-height: 250px; background: #05A;}
+.header { background: #05A;}
 
 a, a:link, a:focus, a:hover {color: $base-color; font-weight: 500;	}
 
@@ -31,7 +31,7 @@ a, a:link, a:focus, a:hover {color: $base-color; font-weight: 500;	}
 .steering dd{ margin-top: 2px; }
 .patronage li{ margin-bottom: 12px;  }
 .carousel-caption { padding: 0px;bottom: 0px;width: 100%;left: 0%;text-align: center; }
-.carousel-caption-logo{background-color: rgba(255,255,255,0.0);width: 500px;padding-right: 2px;padding-left: 0px;}
+.carousel-caption-logo{background-color: rgba(255,255,255,0.0);max-width: 500px;padding-right: 2px;padding-left: 0px;}
 img.footer-sponsor-logo {display: inline-block;border: 1px solid #eaeaea;margin-right: 5px;position: absolute;background: #fff;padding: 10px;top: -20px;left: -10px;width: 140px;height: 140px;z-index: 100;border-radius: 50%;box-shadow: 4px 4px 4px rgba(0,0,0,0.05);}
 .footer-sponsor {box-sizing: border-box;background: #fff;vertical-align: middle;border: 1px solid #eaeaea;padding-right: 15px;margin: 45px 0;min-height: 80px;position: relative;box-shadow: 4px 4px 4px rgba(0,0,0,0.05);border-radius: 45px;}
 h5.footer-sponsor-title { padding: 0 0 0 135px; margin: 27px 45px 15px; text-align: center; font-size: 20px; display: block; font-weight: 500; line-height: 1.1; color: inherit;  }
@@ -81,13 +81,14 @@ h3 { letter-spacing:0pt; }
 .navbar-inverse .navbar-nav .open .dropdown-menu > li > a {color: $base-dark-color;}
 .navbar-inverse .navbar-nav .open .dropdown-menu>li>a:hover,.navbar-inverse .navbar-nav .open	.dropdown-menu>li>a:focus { color: $base-dark-color; background: $base-light;; }
 .dl-horizontal dd {margin-left:0px;}
+.carousel-caption-logo{background-color: rgba(255,255,255,0.0);max-width: 300px;padding-right: 2px;padding-left: 0px;}
 }
 @media all and (max-width: 768px ){
 .navbar-wrapper { position: relative;top: 0px; }
 }
   
 /*btn Start*/
-.btn-box {text-align: left; float: left; width: 920px;}
+.btn-box {text-align: left; max-width: 920px;}
 .btn-1 {font-size: 20px; letter-spacing:1.2pt; text-transform: uppercase ;}
 .btn-success {
 color: #fff;
