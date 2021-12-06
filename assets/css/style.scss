@@ -81,8 +81,15 @@ h3 { letter-spacing:0pt; }
 .navbar-inverse .navbar-nav .open .dropdown-menu > li > a {color: $base-dark-color;}
 .navbar-inverse .navbar-nav .open .dropdown-menu>li>a:hover,.navbar-inverse .navbar-nav .open	.dropdown-menu>li>a:focus { color: $base-dark-color; background: $base-light;; }
 .dl-horizontal dd {margin-left:0px;}
-.carousel-caption-logo{background-color: rgba(255,255,255,0.0);max-width: 300px;padding-right: 2px;padding-left: 0px;}
 }
+
+@media (max-width: 566px) {
+    .navbar-inverse .navbar-nav .open .dropdown-menu > li > a {color: $base-dark-color;}
+    .navbar-inverse .navbar-nav .open .dropdown-menu>li>a:hover,.navbar-inverse .navbar-nav .open	.dropdown-menu>li>a:focus { color: $base-dark-color; background: $base-light;; }
+    .dl-horizontal dd {margin-left:0px;}
+    .carousel-caption-logo{background-color: rgba(255,255,255,0.0);max-width: 300px;padding-right: 2px;padding-left: 0px;}
+    }
+
 @media all and (max-width: 768px ){
 .navbar-wrapper { position: relative;top: 0px; }
 }
