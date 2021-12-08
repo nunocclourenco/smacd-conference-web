@@ -43,6 +43,10 @@ h2 .glyphicon {font-size: 16px;}
 h2 a, h2 a:link, h2 a:focus,  h2 a:hover {color: #fff;	}
 h3 { letter-spacing:0pt; }
 
+
+/*btn Start*/
+.btn-box {text-align: left; max-width: 600px;  padding-top: 60px; }
+
 /* nav styles */
 .navbar-inverse, .navbar-inverse .navbar-brand, .navbar-inverse .navbar-nav>li>a {background: #fff; letter-spacing:2pt; border-color: #fff;  color:$base-dark-color;}
 .navbar-inverse .navbar-nav>.open>a, .navbar-inverse  .navbar-nav>.open>a:hover,.navbar-inverse  .navbar-nav>.open>a:focus  {background:$base-light; letter-spacing:2pt; border-color: #fff;  color:$base-dark-color;}
@@ -59,6 +63,10 @@ h3 { letter-spacing:0pt; }
 .navbar-inverse, .navbar-inverse .navbar-nav>li>a { font-size: 18px;}	
 .navbar-inverse .navbar-brand {font-size: 22px;}	
 .navbar-inverse .dropdown-menu>li>a {font-size: 16px;}
+}
+
+@media (max-width: 1200px) {
+.btn-box {text-align: left; max-width: 600px;  padding: 10px; }
 }
 @media (min-width: 768px) and (max-width: 992px) {
 .navbar-nav .open .dropdown-menu { position: static; float: none; width: auto; margin-top: 0; background-color: transparent; border: 0;  -webkit-box-shadow: none;box-shadow: none; }
@@ -94,8 +102,7 @@ h3 { letter-spacing:0pt; }
 .navbar-wrapper { position: relative;top: 0px; }
 }
   
-/*btn Start*/
-.btn-box {text-align: left; max-width: 920px;}
+
 .btn-1 {font-size: 20px; letter-spacing:1.2pt; text-transform: uppercase ;}
 .btn-success {
 color: #fff;
