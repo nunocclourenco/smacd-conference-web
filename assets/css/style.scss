@@ -6,7 +6,7 @@ $base-dark-color:  #038;
 $base-light: rgba($base-color, 0.1);
 $alternative-color: #894;
 
-body { font-family: "Poppins", sans-serif; color: #4a4a4a; text-align: justify; font-size: 16px; padding-top: 50px; }
+body { font-family: "Poppins", sans-serif; color: #222222; text-align: justify; font-size: 16px; padding-top: 50px; }
 
 footer {background-color:#f7f7f7;border-top: 1px solid #ddd;}
 .header { background: #05A;}
@@ -16,7 +16,21 @@ a, a:link, a:focus, a:hover {color: $base-color; font-weight: 500;	}
 .base-color {color: $base-color}
 .alternative-color {color:$alternative-color}
 
-.h2-center { text-align: center;}
+
+
+.hof { font-style:italic; font-size:20px; color:#a1d1e7;  }
+.hof div {display: inline-block; vertical-align:top; }
+.hof-head {width: 8%; max-width: 120px; min-width: 100px;  text-align:right; padding-right:8px;}
+.hof-head-small {font-size:16px;}
+.hof-content {width: 85%; min-width: 430px; }
+
+.hof p { padding-left:8px; font-style:normal; color: #777777; font-size: 14px; border-left: 1px solid #bfe1f1; }
+.hof p em { display:block;font-size: 17px; }
+
+
+
+.center { text-align: center;}
+.left { text-align: left;}
 
 .hclass{ letter-spacing:1.1pt; background-color: #C22;   color:#FFF; padding: 10px;  margin-top:10px; font-size: 18px; border: 1px solid #FFF; }
 .hclass a, .hclass  a:link, .hclass  a:focus,  .hclass  a:hover {  color: #C00000;	}
@@ -96,6 +110,9 @@ h3 { letter-spacing:0pt; }
     .navbar-inverse .navbar-nav .open .dropdown-menu>li>a:hover,.navbar-inverse .navbar-nav .open	.dropdown-menu>li>a:focus { color: $base-dark-color; background: $base-light;; }
     .dl-horizontal dd {margin-left:0px;}
     .carousel-caption-logo{background-color: rgba(255,255,255,0.0);max-width: 300px;padding-right: 2px;padding-left: 0px;}
+
+    .hof-head {text-align:left; padding-left:10px; width: 100%; max-width: 100%;}
+    .hof-content {width: 100%; min-width: 430px; }
     }
 
 @media all and (max-width: 768px ){
