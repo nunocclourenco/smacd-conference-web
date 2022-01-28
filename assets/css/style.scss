@@ -32,8 +32,13 @@ a, a:link, a:focus, a:hover {color: $base-color; font-weight: 500;	}
 .center { text-align: center;}
 .left { text-align: left;}
 
-.hclass{ letter-spacing:1.1pt; background-color: #C22;   color:#FFF; padding: 10px;  margin-top:10px; font-size: 18px; border: 1px solid #FFF; }
-.hclass a, .hclass  a:link, .hclass  a:focus,  .hclass  a:hover {  color: #C00000;	}
+.hclass{ letter-spacing:1.2pt; background-color: #e8f6fc;   color:$base-color; padding: 10px;  margin-top:10px; font-size: 18px; border: 1px solid #FFF; }
+.hclass>.lead { letter-spacing:1.5pt; background-color: $base-light; border-color: $base-light;  color:$base-dark-color; font-size: 22px; text-transform: uppercase; padding-left: 15px; padding-top: 1px;	padding-bottom: 1px; }
+.hclass>.lead a, .hclass>.lead  a:link, .hclass>.lead  a:focus,  .hclass>.lead  a:hover {  color:$base-dark-color;	}
+.hclass>.lead>a>.glyphicon {font-size: 16px;color:$alternative-color}
+
+.hclass p a, .hclass p a:link, .hclass p a:focus,  .hclass p a:hover {  color:$alternative-color;	}
+
 .hclass.last {margin-bottom:10px;}
 
 .intro {font-size: 18px;line-height: 1.4;}
