@@ -39,6 +39,15 @@ a, a:link, a:focus, a:hover {color: $base-color; font-weight: 500;	}
 
 .hclass p a, .hclass p a:link, .hclass p a:focus,  .hclass p a:hover {  color:$alternative-color;	}
 
+
+.hclassred{ letter-spacing:1.2pt; background-color: #f5dfdf;   color:#aa1111; text-align:center; padding: 10px;  margin-top:10px; font-size: 18px; border: 1px solid #FFF; }
+.hclassred>.lead {     margin-top: 20px;letter-spacing:1.5pt; background-color: #e9c4c4; border-color: #aa1111;  color:#AA1111;; font-size: 26px; text-transform: uppercase; padding-left: 15px; padding-top: 1px;	padding-bottom: 1px; }
+.hclassred>.lead a, .hclassred>.lead  a:link, .hclassred>.lead  a:focus,.hclassred>.lead  a:hover {  color:#AA1111;	}
+.hclassred>.lead>a>.glyphicon {font-size: 16px;color:#AA1111}
+
+
+
+
 .hclass.last {margin-bottom:10px;}
 
 .intro {font-size: 18px;line-height: 1.4;}
