@@ -27,26 +27,26 @@ a, a:link, a:focus, a:hover {color: $base-color; font-weight: 500;	}
 .hof p { padding-left:8px; font-style:normal; color: #777777; font-size: 14px; border-left: 1px solid #bfe1f1; }
 .hof p em { display:block;font-size: 17px; }
 
-.plenary  {
+.pt_plenary  {
 	letter-spacing:1.1pt;
 	background-color: #FFF; border-color: #FFF;  color:#C00000;
 	 font-size: 24px;
 	 text-transform: uppercase;
 	padding-left: 15px; padding-top: 10px; padding-bottom: 1px;
 }
-.plenary-title  {
+.pt_plenary-title  {
 	letter-spacing:1.1pt;
 	background-color: #FFF; border-color: #FFF; 
 	 font-size: 22px;
 	 text-transform: uppercase;
 }
-.plenary-presenter {
+.pt_plenary-presenter {
 	letter-spacing:1.1pt;
 	background-color: #FFF; border-color: #FFF; 
 	 font-size: 16px;
 	 text-transform: uppercase;
 }
-.bio {
+.pt_bio {
 	 font-size: 10pt;
 }
 
