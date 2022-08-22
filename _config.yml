@@ -25,11 +25,11 @@ url: https://smacd-conference.org
 # url: https://nunocclourenco.github.io  # the base hostname and protocol for your site, e.g. http://example.com
 baseurl: /      # place folder name if the site is served in a subfolder
 
-title: SMACD22
+title: SMACD 2023
 email: nlourenco@lx.it.pt
 description: >- # this means to ignore newlines until "baseurl:"
-  SMACD 2022 - International Conference on Synthesis, Modeling, Analysis and Simulation Methods and Applications to Circuit Design,
-  Sardinia, 12-15 June, 2022.
+  SMACD - International Conference on Synthesis, Modeling, Analysis and Simulation Methods and Applications to Circuit Design,
+  Funchal -Madeira, Portugal, 3-5 July, 2023.
 
 #twitter_username: jekyllrb
 #github_username:  jekyll
