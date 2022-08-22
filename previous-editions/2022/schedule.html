@@ -1,0 +1,312 @@
+---
+layout: default
+title: Schedule
+---
+<style>
+	.rooms{	text-align: center;	background-color: #f5f5f5;	font-weight: normal;	font-style: italic;}
+	.room_i {font-weight: normal;	font-style: italic;}
+	.session { background-color: rgb(192,0,0);text-align: center;color: #FFF;}
+	.session>td>a {	color: #FFF;}
+	.session>td>a:link {color: #FFF;}
+	.session>td>a:hover {color: #C0C0C0;	}
+	.session .S {	background-color: #05a;	}
+  .session .B {	background-color: #8ba70a;	}
+  .session .R {	background-color: rgb(119, 119, 119);	}
+	.session .N {	background-color: #FFF;	}
+
+	.plenary{	background-color: rgb(245,245,245); font-weight: bold; 	text-align: center;	}
+	
+	
+	.plenary>td>a {
+		color: #4a4a4a;
+	}
+	.plenary>td>a:link {
+		color: #4a4a4a;
+	}
+	.plenary>td>a:hover {
+		color: #808080;
+	}
+	
+	
+	 .welcome{
+		background-color: #FFF;
+		text-align: center;
+	}
+	 .day{
+		background-color: rgb(250,250,250);
+		font-weight: bold;
+		text-align: center;
+	}
+	.time{
+		max-width: 70px;
+		width: 70px;
+		background-color: white;
+		color: #4a4a4a;
+		font-weight: normal;
+		text-align: center;
+	}
+	a{
+		color: #444444;
+	}
+	
+</style>
+
+<div class="row featurette"><div class="col-md-12">
+	<h2 class="featurette-heading"> Schedule </h2>
+</div></div>
+
+
+<ul class="nav nav-tabs">
+  <li><a data-toggle="tab" href="#sunday">Sunday, June 12th</a></li>
+  <li class="active"><a data-toggle="tab" href="#monday">Monday, July 13th</a></li>
+  <li ><a data-toggle="tab" href="#tuesday">Tuesday, June 14th</a></li>
+  <li><a data-toggle="tab" href="#wednesday">Wednesday, June 15st</a></li>
+  
+</ul>
+
+<div class="tab-content">
+  <div id="sunday" class="tab-pane">
+    <div class="table-responsive"> 
+  
+  
+  <table class = "table table-bordered"   style="border: 0;text-align: center;table-layout: fixed;">
+  <tbody >
+  
+   <tr class = "day">
+    <td class = "time">&nbsp;<a name = "SUN"></a></td>
+    <td colspan="4"><b>Sunday, June 12th</b> </td>
+   </tr>
+  
+   <tr class = "welcome">
+    <td class = "time">15:00</td>
+    <td  colspan="4">Registration Desk Opens</td>
+   </tr>
+
+  <tr  class = "plenary">
+     <td class = "time">18:30</td>
+     <td  colspan="4">Welcome Cocktail<br/><span class="room_i"></span></td>
+  </tr>
+ 
+</tbody></table>
+  
+  </div>
+  
+    </div>
+
+
+  <div id="monday" class="tab-pane in active">
+  <div class="table-responsive"> 
+
+
+<table class = "table table-bordered"   style="border: 0;text-align: center;table-layout: fixed;">
+<tbody >
+  <tr class = "day">
+  <td class = "time">&nbsp; &nbsp;</td>
+  <td colspan="4"><b>Monday, June 13th</b></td>
+ </tr>
+
+ <tr class = "plenary">
+  <td class = "time"></td>
+  <td>Ibisco Room (Plenary)</td>
+  <td>Gardenia Room</td>
+  <td>Begonia Room</td>
+  <td>Azalea Room</td>
+ </tr>
+ <tr class = "welcome">
+  <td class = "time">08:30</td>
+  <td  colspan="4">Opening Session<br/><span class="room_i">(Ibisco Room)</span></td>
+ </tr>
+ <tr  class = "plenary">
+  <td class = "time">08:45</td>
+  <td  colspan="4"><a href="{{ 'plenary-talks' | relative_url }}">How to Learn Practical ASIC and Board Design in Just One Year </a>
+  <a href="{{ 'plenary-talks' | relative_url }}"><small>&nbsp;<span class="glyphicon glyphicon-log-in" aria-hidden="true"></span></small></a>
+  <br/><span class="room_i">by Prof. Eckhard Hennig, Reutlingen University, Germany.</span></td>
+ </tr>
+  <tr  class = "session" ><td class = "time">09:15</td>
+    <td>A1 | RF Circuits and Systems I <a href="{{ 'technical-program' | relative_url }}#A1"><small>&nbsp;<span class="glyphicon glyphicon-log-in" aria-hidden="true"></span></small></a></td>
+    <td>B1 | Manufacturing and Testing <a href="{{ 'technical-program' | relative_url }}#B1"><small>&nbsp;<span class="glyphicon glyphicon-log-in" aria-hidden="true"></span></small></a></td>
+    <td class="S">C1 | Physical design and layout-aware synthesis <a href="{{ 'technical-program' | relative_url }}#C1"><small>&nbsp;<span class="glyphicon glyphicon-log-in" aria-hidden="true"></span></small></a></td>
+    <td class="S">D1 | Special Session:  <a href="{{ 'technical-program' | relative_url }}#D1"><small>&nbsp;<span class="glyphicon glyphicon-log-in" aria-hidden="true"></span></small></a></td></tr>
+ <tr> <td class = "time">10:30</td><td  colspan="4">Coffee Break</td></tr>
+ <tr  class = "session" ><td class = "time">11:00</td>
+  <td>A2 | SPAD-based Circuits <a href="{{ 'technical-program' | relative_url }}#A2"><small>&nbsp;<span class="glyphicon glyphicon-log-in" aria-hidden="true"></span></small></a></td>
+  <td>B2 | Sensors I <a href="{{ 'technical-program' | relative_url }}#B2"><small>&nbsp;<span class="glyphicon glyphicon-log-in" aria-hidden="true"></span></small></a></td>
+  <td class="S">C2 | Variability-aware modeling and design <a href="{{ 'technical-program' | relative_url }}#C2"><small>&nbsp;<span class="glyphicon glyphicon-log-in" aria-hidden="true"></span></small></a></td>
+  <td class="S">D2 | Improving power delivery <a href="{{ 'technical-program' | relative_url }}#C2"><small>&nbsp;<span class="glyphicon glyphicon-log-in" aria-hidden="true"></span></small></a></td></tr>
+ <tr >
+  <td class = "time">12:15</td>
+  <td  colspan="4">Lunch</td>
+ </tr>
+ <tr class = "session">
+  <td class = "time">15:00</td>
+  <td  colspan="4" class="B">I1 | Industrial Talks I <a href="{{ 'technical-program' | relative_url }}#I1"><small>&nbsp;<span class="glyphicon glyphicon-log-in" aria-hidden="true"></span></small></a><br/><span class="room_i">(Ibisco Room)</span></td>
+ </tr>
+ <tr class = "session">
+  <td class = "time">16:00</td>
+  <td class="S">A3 | EDA Competition <a href="{{ 'technical-program' | relative_url }}#A3"><small>&nbsp;<span class="glyphicon glyphicon-log-in" aria-hidden="true"></span></small></a></td>
+  <td >B3 | Analog Circuits I <a href="{{ 'technical-program' | relative_url }}#B3"><small>&nbsp;<span class="glyphicon glyphicon-log-in" aria-hidden="true"></span></small></a></td>
+  <td >C3 | Sensors II <a href="{{ 'technical-program' | relative_url }}#C3"><small>&nbsp;<span class="glyphicon glyphicon-log-in" aria-hidden="true"></span></small></a></td>
+  <td >D3 | Digital Circuits I <a href="{{ 'technical-program' | relative_url }}#D3"><small>&nbsp;<span class="glyphicon glyphicon-log-in" aria-hidden="true"></span></small></a></td>
+ </tr>
+ <tr  class = "session">
+  <td class = "time">18:05</td>
+  <td  colspan="4" class="B"><a href="https://www.pragmacongressi.it/elenco-eventi/eventi-2022/12-15-june-primesmacd-2022/wicas-yp-event.html">WiCAS & YP Event</a>
+    <br/><span class="room_i">(Ibisco Room)</span></td>
+ </tr>
+
+  <tr style="border: 0;">  <td colspan="5" style="border: 0;"></td> </tr>
+ 
+  <tr class = "session" style="border: 0;">
+  <td class = "time" colspan="3" style="border: 0;"></td>
+  <td>PRIME Technical Sessions</td>
+  <td class = "S">SMACD Technical Sessions</td>
+ </tr>
+ 
+  </tbody>
+</table>
+</div>
+</div>
+  <div id="tuesday" class="tab-pane">
+    <div class="table-responsive"> 
+
+
+<table class = "table table-bordered"   style="border: 0;text-align: center;table-layout: fixed;">
+<tbody >
+ <tr class = "day">
+  <td class = "time">&nbsp; <a name = "TUE"></a></td>
+  <td  colspan="4"><b>Tuesday, June 14th</b></td>
+ </tr>
+ <tr class = "plenary">
+  <td class = "time"></td>
+  <td>Ibisco Room (Plenary)</td>
+  <td>Gardenia Room</td>
+  <td>Begonia Room</td>
+  <td>Azalea Room</td>
+ </tr>
+ <tr  class = "welcome">
+  <td class = "time">08:30</td>
+  <td  colspan="4"><a href="{{ 'plenary-talks' | relative_url }}"> Use the Brain and not the Fingers</a>
+  <a href="{{ 'plenary-talks' | relative_url }}"><small>&nbsp;<span class="glyphicon glyphicon-log-in" aria-hidden="true"></span></small></a>
+  <br/><span class="room_i">Prof. Franco Maloberti, University of Pavia, Italy </span></td>
+ </tr>
+ <tr  class = "session" ><td class = "time">09:00</td>
+  <td>A4 | RF Circuits and Systems II <a href="{{ 'technical-program' | relative_url }}#A4"><small>&nbsp;<span class="glyphicon glyphicon-log-in" aria-hidden="true"></span></small></a></td>
+  <td>B4 | Human Monitoring and Detection Systems <a href="{{ 'technical-program' | relative_url }}#B4"><small>&nbsp;<span class="glyphicon glyphicon-log-in" aria-hidden="true"></span></small></a></td>
+  <td class="S">C4 | Machine learning applications <a href="{{ 'technical-program' | relative_url }}#C4"><small>&nbsp;<span class="glyphicon glyphicon-log-in" aria-hidden="true"></span></small></a></td>
+  <td class="S">D4 | Characterization and analysis of  variability phenomena <a href="{{ 'technical-program' | relative_url }}#D4"><small>&nbsp;<span class="glyphicon glyphicon-log-in" aria-hidden="true"></span></small></a></td>
+</tr>
+ <tr>
+  <td class = "time">10:30</td>
+  <td colspan="4">Coffee Break</a></td>
+ </tr>
+ <tr class = "session">
+  <td class = "time">11:00</td>
+  <td  colspan="4" class="B">I2 | Industrial Talks II<a href="{{ 'technical-program' | relative_url }}#I2"><small>&nbsp;<span class="glyphicon glyphicon-log-in" aria-hidden="true"></span></small></a><br/><span class="room_i">(Ibisco Room)</span></td>
+ </tr>
+ <tr >
+  <td class = "time">12:15</td>
+  <td  colspan="4">Lunch</td>
+ </tr>
+ <tr class = "session">
+  <td class = "time">14:30</td>
+  <td  colspan="4" class="B">State of the art cosimulation methodology with Cadence®  Virtuoso®/Spectre-RF® and MathWorks®  MATLAB®/Simulink® <a href="{{ 'technical-program' | relative_url }}#T1"><small>&nbsp;<span class="glyphicon glyphicon-log-in" aria-hidden="true"></span></small></a><br/><span class="room_i">a tutorial by Marat Yakupov, Cadence</span></td>
+ </tr>
+ <tr class = "session">
+  <td class = "time">15:30</td>
+  <td  colspan="4" class="B">I3 | Industrial Talks III<a href="{{ 'technical-program' | relative_url }}#I3"><small>&nbsp;<span class="glyphicon glyphicon-log-in" aria-hidden="true"></span></small></a><br/><span class="room_i">(Ibisco Room)</span></td>
+ </tr>
+ <tr class = "session">
+  <td class = "time">16:30</td>
+  <td >A5 | Analog Circuits II <a href="{{ 'technical-program' | relative_url }}#A5"><small>&nbsp;<span class="glyphicon glyphicon-log-in" aria-hidden="true"></span></small></a></td>
+  <td >B5 | Digital Circuits II <a href="{{ 'technical-program' | relative_url }}#B5"><small>&nbsp;<span class="glyphicon glyphicon-log-in" aria-hidden="true"></span></small></a></td>
+  <td >C5 | Power Electronics <a href="{{ 'technical-program' | relative_url }}#C5"><small>&nbsp;<span class="glyphicon glyphicon-log-in" aria-hidden="true"></span></small></a></td>
+  <td >D5 | Circuits and Systems for Photonic Applications <a href="{{ 'technical-program' | relative_url }}#D5"><small>&nbsp;<span class="glyphicon glyphicon-log-in" aria-hidden="true"></span></small></a></td>
+ </tr>
+ <tr>
+  <td class = "time">18:35</td>
+  <td colspan="4">Break</a></td>
+ </tr>
+ <tr  class = "plenary">
+  <td class = "time">20:30</td>
+  <td  colspan="4">Gala Dinner
+    <br/><span class="room_i"></span></td>
+</td>
+ </tr>
+
+  <tr style="border: 0;">  <td colspan="5" style="border: 0;"></td> </tr>
+ 
+  <tr class = "session" style="border: 0;">
+  <td class = "time" colspan="3" style="border: 0;"></td>
+  <td>PRIME Technical Sessions</td>
+  <td class = "S">SMACD Technical Sessions</td>
+ </tr>
+ 
+  </tbody>
+</table>
+
+</div>
+
+  </div>
+  <div id="wednesday" class="tab-pane">
+    <div class="table-responsive"> 
+
+
+<table class = "table table-bordered"   style="border: 0;text-align: center;table-layout: fixed;">
+<tbody >
+   
+ <tr class = "day">
+  <td class = "time"> &nbsp;<a name = "WED"></a></td>
+  <td colspan="4"><b>Wednesday,   June 15st</b></td>
+ </tr>
+ <tr class = "plenary">
+  <td class = "time"></td>
+  <td>Ibisco Room (Plenary)</td>
+  <td>Gardenia Room</td>
+  <td>Begonia Room</td>
+  <td>Azalea Room</td>
+ </tr>
+ <tr  class = "session" ><td class = "time">08:45</td>
+  <td>A6 | Circuits and Interfaces for Neural Recording <a href="{{ 'technical-program' | relative_url }}#A6"><small>&nbsp;<span class="glyphicon glyphicon-log-in" aria-hidden="true"></span></small></a></td>
+  <td>B6 |  Power and Data Transmission <a href="{{ 'technical-program' | relative_url }}#B6"><small>&nbsp;<span class="glyphicon glyphicon-log-in" aria-hidden="true"></span></small></a></td>
+  <td class="S">C6 | Synthesis and exploration <a href="{{ 'technical-program' | relative_url }}#C6"><small>&nbsp;<span class="glyphicon glyphicon-log-in" aria-hidden="true"></span></small></a></td>
+  <td class="S">D6 | Analysis and verification <a href="{{ 'technical-program' | relative_url }}#D6"><small>&nbsp;<span class="glyphicon glyphicon-log-in" aria-hidden="true"></span></small></a></td>
+</tr>
+<tr> <td class = "time">10:15</td><td  colspan="4">Coffee Break</td></tr>
+<tr  class = "session" ><td class = "time">10:45</td>
+<td>A7 | Biomedical Electronics <a href="{{ 'technical-program' | relative_url }}#A7"><small>&nbsp;<span class="glyphicon glyphicon-log-in" aria-hidden="true"></span></small></a></td>
+<td>B7 | Cryptography and Neural Networks <a href="{{ 'technical-program' | relative_url }}#B7"><small>&nbsp;<span class="glyphicon glyphicon-log-in" aria-hidden="true"></span></small></a></td>
+<td class="S">C7 | Design methodologies <a href="{{ 'technical-program' | relative_url }}#C7"><small>&nbsp;<span class="glyphicon glyphicon-log-in" aria-hidden="true"></span></small></a></td>
+<td class="S">D7 | Device modeling and analysis <a href="{{ 'technical-program' | relative_url }}#D7"><small>&nbsp;<span class="glyphicon glyphicon-log-in" aria-hidden="true"></span></small></a></td></tr>
+<tr >
+<td class = "time">12:15</td>
+<td  colspan="4">Lunch</td>
+</tr>
+<tr class = "session">
+  <td class = "time">14:30</td>
+  <td  colspan="4" class="B">Introduction to Co-Packaged Opto-Electronics Design <a href="{{ 'technical-program' | relative_url }}#T2"><small>&nbsp;<span class="glyphicon glyphicon-log-in" aria-hidden="true"></span></small></a><br/><span class="room_i">a tutorial by Dr. Ramsey Selim - Tyndall National Institute and Dr. Pierre Wahl - Luceda Photonics.</span></td>
+ </tr>
+<tr class = "session">
+<td class = "time">15:30</td>
+<td  colspan="4" class="B">I4 |  Industrial Talks IV<a href="{{ 'technical-program' | relative_url }}#I4"><small>&nbsp;<span class="glyphicon glyphicon-log-in" aria-hidden="true"></span></small></a><br/><span class="room_i">(Ibisco Room)</span></td>
+</tr>
+<tr  class = "welcome">
+<td class = "time">16:30</td>
+<td  colspan="4">Awards and Closing
+  <br/><span class="room_i">(Ibisco Room)</span></td>
+</tr>
+ 
+  <tr class = "session" style="border: 0;">
+  <td class = "time" colspan="3" style="border: 0;"></td>
+  <td>PRIME Technical Sessions</td>
+  <td class = "S">SMACD Technical Sessions</td>
+ </tr>
+ 
+  </tbody>
+</table>
+
+</div>
+
+  </div>
+   
+</div>
+

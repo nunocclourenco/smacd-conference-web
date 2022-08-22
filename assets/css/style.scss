@@ -1,20 +1,44 @@
 ---
 ---
 
-$base-color: #05A;
-$base-dark-color:  #038;
+$base-color: #88BBCC;
+$base-dark-color:  #338899;
 $base-light: rgba($base-color, 0.1);
-$alternative-color: #894;
+$alt-color: #573;
+$alt-light: rgba($alt-color, 0.7);
 
 body { font-family: "Poppins", sans-serif; color: #222222; text-align: justify; font-size: 16px; padding-top: 50px; }
 
 footer {background-color:#f7f7f7;border-top: 1px solid #ddd;}
 .header { background: #05A;}
 
-a, a:link, a:focus, a:hover {color: $base-color; font-weight: 500;	}
+.row-centered { margin-top: 20px;}
 
-.base-color {color: $base-color}
-.alternative-color {color:$alternative-color}
+
+.carousel-control.left, .carousel-control.right {
+	background: none !important;
+	filter: none !important; progid: none !important;
+	outline: 0;
+   }
+  .carousel .carousel-control {
+	visibility: hidden;
+  }
+  .carousel:hover .carousel-control {
+	visibility: visible;
+  }
+
+.carousel-caption { padding: 20px; bottom: 0px;width: 100%;left: 0%;text-align: center;     background-color: rgba(0,0,0,0.50);
+    max-width: 575px;}
+
+.carousel-caption p {font-size: 18px; margin: 0; line-height: 1.1; color: #fff; text-shadow: 0 1px 1px rgba(#000, 0.4);  text-align: left; }
+.carousel-caption h1 { font-size: 80px; margin: 0; line-height: 1.1; text-align: left; }
+
+.carousel-caption-logo{ background-color:#fff; max-width: 500px;padding-right: 2px;padding-left: 0px;}
+
+a, a:link, a:focus, a:hover {color: $base-dark-color; font-weight: 500;	}
+
+.bc {color: $base-dark-color}
+.altc {color:$alt-color}
 
 
 
@@ -57,9 +81,9 @@ a, a:link, a:focus, a:hover {color: $base-color; font-weight: 500;	}
 .hclass{ letter-spacing:1.2pt; background-color: #e8f6fc;   color:$base-color; padding: 10px;  margin-top:10px; font-size: 18px; border: 1px solid #FFF; }
 .hclass>.lead { letter-spacing:1.5pt; background-color: $base-light; border-color: $base-light;  color:$base-dark-color; font-size: 22px; text-transform: uppercase; padding-left: 15px; padding-top: 1px;	padding-bottom: 1px; }
 .hclass>.lead a, .hclass>.lead  a:link, .hclass>.lead  a:focus,  .hclass>.lead  a:hover {  color:$base-dark-color;	}
-.hclass>.lead>a>.glyphicon {font-size: 16px;color:$alternative-color}
+.hclass>.lead>a>.glyphicon {font-size: 16px;color:$alt-color}
 
-.hclass p a, .hclass p a:link, .hclass p a:focus,  .hclass p a:hover {  color:$alternative-color;	}
+.hclass p a, .hclass p a:link, .hclass p a:focus,  .hclass p a:hover {  color:$alt-color;	}
 
 
 .hclassred{ letter-spacing:1.2pt; background-color: #f5dfdf;   color:#aa1111; text-align:center; padding: 10px;  margin-top:10px; font-size: 18px; border: 1px solid #FFF; }
@@ -72,43 +96,52 @@ a, a:link, a:focus, a:hover {color: $base-color; font-weight: 500;	}
 
 .hclass.last {margin-bottom:10px;}
 
-.intro {font-size: 18px;line-height: 1.4;}
-.dl-horizontal dt {width: 130px;font-size: 16px;  line-height: 1.6; }
-.dl-horizontal dd {margin-left: 140px;font-size: 16px; line-height: 1.6;}
+.intro {margin-top: 20px; font-size: 18px;line-height: 1.6;}
+.dl-horizontal dt {width: 190px;font-size: 16px;  line-height: 1.6; }
+.dl-horizontal dd {margin-left: 200px;font-size: 16px; line-height: 1.6;}
 
-.commitee dd{ margin-left: 10px; }
-.commitee dt{ letter-spacing:1.1pt; margin-top: 8px;}
-.steering dd{ margin-top: 2px; }
+.commitee dd{ font-size: 18px; margin-left: 10px; margin-top: 14px; line-height: 1}
+.commitee dt{ font-size: 18px; letter-spacing:1.1pt; margin-top: 14px; line-height: 1.2}
+.organizing dd{ font-size: 18px; margin-top: 10px; margin-left: 25px; line-height: 1.1}
 .patronage li{ margin-bottom: 12px;  }
-.carousel-caption { padding: 0px;bottom: 0px;width: 100%;left: 0%;text-align: center; }
-.carousel-caption-logo{background-color: rgba(255,255,255,0.0);max-width: 500px;padding-right: 2px;padding-left: 0px;}
 img.footer-sponsor-logo {display: inline-block;border: 1px solid #eaeaea;margin-right: 5px;position: absolute;background: #fff;padding: 10px;top: -30px;left: -10px;width: 140px;height: 140px;z-index: 100;border-radius: 50%;box-shadow: 4px 4px 4px rgba(0,0,0,0.05);}
 .footer-sponsor {box-sizing: border-box;background: #fff;vertical-align: middle;border: 1px solid #eaeaea;padding-right: 15px;margin: 45px 0;min-height: 80px;position: relative;box-shadow: 4px 4px 4px rgba(0,0,0,0.05);border-radius: 45px;}
 h5.footer-sponsor-title { padding: 0 0 0 135px; margin: 27px 45px 15px; text-align: center; font-size: 20px; display: block; font-weight: 500; line-height: 1.1; color: inherit;  }
 div.contact { text-align: left; }
 .map {max-width:500px;width:100%;height:450px;}
  
-h2 { letter-spacing:1.1pt; background-color: $base-color; border-color: $base-color;  color:#fff; font-size: 22px; text-transform: uppercase; padding-left: 15px; padding-top: 1px;	padding-bottom: 1px; }
+h2 { letter-spacing:1.1pt; background-color: $base-color; border-color: $base-color;  color:#fff; font-weight: 700; font-size: 28px; text-transform: uppercase; padding-left: 15px; padding-top: 12px;	padding-bottom: 12px; }
 h2 .glyphicon {font-size: 16px;}
 h2 a, h2 a:link, h2 a:focus,  h2 a:hover {color: #fff;	}
-h3 { letter-spacing:0pt; }
+
+
+h3 { letter-spacing:1pt; background-color: $alt-light; border-color: $alt-light;  color:#fff; font-weight: 500; font-size: 26px; text-transform: uppercase; padding-left: 15px; padding-top: 8px;	padding-bottom: 8px; }
+
+
+h4 { letter-spacing:0pt; background-color: #fff; color:$base-dark-color; font-weight:700; font-size: 22px; padding-top: 6px;	padding-bottom: 6px; padding-left: 18px;}
+
 
 
 /*btn Start*/
 .btn-box {text-align: left; max-width: 600px;  padding-top: 60px; }
 
 /* nav styles */
+nav {
+    margin-top: 20px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
 .navbar-inverse, .navbar-inverse .navbar-brand, .navbar-inverse .navbar-nav>li>a {background: #fff; letter-spacing:2pt; border-color: #fff;  color:$base-dark-color;}
 .navbar-inverse .navbar-nav>.open>a, .navbar-inverse  .navbar-nav>.open>a:hover,.navbar-inverse  .navbar-nav>.open>a:focus  {background:$base-light; letter-spacing:2pt; border-color: #fff;  color:$base-dark-color;}
 .navbar-inverse .navbar-nav>li>a:hover, .navbar-inverse .navbar-nav>li>a:focus, .navbar-inverse .navbar-brand:hover,.navbar-inverse .navbar-brand:focus { background:$base-light; color: $base-dark-color;}
-.navbar-inverse .dropdown-menu>li>a {color: $base-dark-color; 	font-size: 16px;}
+.navbar-inverse .dropdown-menu>li>a {color: $base-dark-color; 	font-size: 20px;}
 .navbar-inverse .dropdown-menu>li>a:hover,	.dropdown-menu>li>a:focus { background: $base-light; }
 .navbar-inverse .navbar-toggle{  border-color: $base-dark-color;  background-color: $base-dark-color;}
 .navbar-inverse .navbar-toggle:hover{  background-color: $base-dark-color;}
-@media (max-width: 1980px) {
-.navbar-inverse, .navbar-inverse .navbar-nav>li>a { font-size: 22px;}	
-.navbar-inverse .navbar-brand {font-size: 32px;}	
-}
+
+.navbar-inverse, .navbar-inverse .navbar-nav>li>a { font-size: 28px;}	
+.navbar-inverse .navbar-brand {font-size: 34px;}	
+
 @media (max-width: 1360px) {
 .navbar-inverse, .navbar-inverse .navbar-nav>li>a { font-size: 18px;}	
 .navbar-inverse .navbar-brand {font-size: 22px;}	
@@ -141,15 +174,25 @@ h3 { letter-spacing:0pt; }
 .dl-horizontal dd {margin-left:0px;}
 }
 
-@media (max-width: 566px) {
+@media (max-width: 620px) {
     .navbar-inverse .navbar-nav .open .dropdown-menu > li > a {color: $base-dark-color;}
     .navbar-inverse .navbar-nav .open .dropdown-menu>li>a:hover,.navbar-inverse .navbar-nav .open	.dropdown-menu>li>a:focus { color: $base-dark-color; background: $base-light;; }
     .dl-horizontal dd {margin-left:0px;}
     .carousel-caption-logo{background-color: rgba(255,255,255,0.0);max-width: 300px;padding-right: 2px;padding-left: 0px;}
 
+	.carousel-caption { padding: 2px; bottom: 0px;width: 100%;left: 0%;text-align: center;     background-color: rgba(0,0,0,0.50);
+		max-width: 100vw;}
+	.carousel-caption p {font-size: 3vw; margin: 0; line-height: 1.1; color: #fff; text-shadow: 0 1px 1px rgba(#000, 0.4);  text-align: left; }
+	.carousel-caption h1 { font-size: 14vw; margin: 0; line-height: 1.1; text-align: left; }
+
     .hof-head {text-align:left; padding-left:10px; width: 100%; max-width: 100%;}
     .hof-content {width: 100%; min-width: 430px; }
     }
+
+
+	@media (max-width: 402px) {
+		.carousel-caption p {font-size: 0vw; visibility:hidden;}
+	}
 
 @media all and (max-width: 768px ){
 .navbar-wrapper { position: relative;top: 0px; }
