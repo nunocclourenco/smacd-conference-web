@@ -154,7 +154,8 @@ nav {
 
 
 .btn-1 {font-size: 20px; letter-spacing:1.2pt; text-transform: uppercase }
-.btn-success {
+
+.btn-success, .btn-success:visited, .btn-success:link {
 color: #fff;
 background-color: #8ba70a;
 border-color: #fff
