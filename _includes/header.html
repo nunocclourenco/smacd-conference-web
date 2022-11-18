@@ -8,20 +8,23 @@
     </div>
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="{{ 'call-for-papers' | relative_url }}">Call for Papers</a></li>
-        <li><a href="{{ 'paper-submission' | relative_url }}">Paper Submission</a></li>
-        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Conference<span class="caret"></span></a>
-        <ul class="dropdown-menu">
-          
-          <li><a href="{{ 'committees' | relative_url }}">Committees</a></li>
-          <li><a href="{{ 'previous-editions' | relative_url }}">Previous Editions</a></li>
-        </ul>
         
-        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">EDA Competition<span class="caret"></span></a>
-        <ul class="dropdown-menu">
-          <li><a href="{{ 'hall-of-fame' | relative_url }}"">Hall of Fame</a></li>
-        </ul>
+        <li><a href="{{ 'call-for-papers' | relative_url }}">Call for Papers</a></li>
+        <li><a href="{{ 'call-for-competition' | relative_url }}"">EDA Competition</a></li>
+        <li><a href="{{ 'call-for-ic-design-contest' | relative_url }}"">IC Design Contest</a></li>
+
+        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Conference<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="{{ 'call-for-papers' | relative_url }}">Call for Papers</a></li>
+            <li><a href="{{ 'special-sessions' | relative_url }}">Special Sessions</a></li>
+            <li><a href="{{ 'paper-submission' | relative_url }}">Paper Submission</a></li>
+            
+            <li><a href="{{ 'committees' | relative_url }}">Committees</a></li>
+            <li><a href="{{ 'previous-editions' | relative_url }}">Previous Editions</a></li>
+            <li><a href="{{ 'hall-of-fame' | relative_url }}"">Hall of Fame</a></li>
+          </ul>
         </li>
+        
       </ul>
     </div>
   </div>
@@ -54,7 +57,9 @@
 
       <div class="btn-box">
         <div class = "btn-group " > 
-        <a href="{{ 'content/SMACD23_FinalCFP.pdf' | relative_url }}" target="_blank" class="btn btn-lg btn-block btn-success btn-1" >Call for Papers</a>
+        <a href="{{ 'content/SMACD23_FinalCFP.pdf' | relative_url }}" target="_blank" class="btn btn-block btn-success btn-1" >Call for Papers</a>
+        <a href="{{ 'content/SMACD23_CFC.pdf' | relative_url }}" target="_blank" class="btn btn-block btn-success btn-1" >Call for EDA Competition</a>
+        <a href="{{ 'content/SMACD23_CFIC.pdf' | relative_url }}" target="_blank" class="btn btn-block btn-success btn-1" >Call for IC Design Contest</a>
         
       </div> 
     </div> 

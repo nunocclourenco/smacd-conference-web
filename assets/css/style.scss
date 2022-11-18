@@ -8,7 +8,7 @@ $base-ulight: rgba($base-color, 0.05);
 $alt-color: #573;
 $alt-light: rgba($alt-color, 0.7);
 
-body { font-family: "Poppins", sans-serif; color: #222222; text-align: justify; font-size: 16px; padding-top: 50px; }
+body { font-family: "Poppins", sans-serif; color: #222222; text-align: justify; font-size: 18px; padding-top: 50px; }
 
 footer {background-color:#f7f7f7;border-top: 1px solid #ddd;}
 .header { background: #05A;}
@@ -105,9 +105,9 @@ a, a:link, a:focus, a:hover {color: $base-dark-color; font-weight: 500;	}
 
 .hclass.last {margin-bottom:10px;}
 
-.intro {margin-top: 20px; font-size: 18px;line-height: 1.6;}
-.dl-horizontal dt {width: 190px;font-size: 16px;  line-height: 1.6; }
-.dl-horizontal dd {margin-left: 200px;font-size: 16px; line-height: 1.6;}
+.intro {margin-top: 20px; line-height: 1.6;}
+.dl-horizontal dt {width: 190px;  line-height: 1.6; }
+.dl-horizontal dd {margin-left: 200px; line-height: 1.6;}
 
 .commitee dd{ font-size: 18px; margin-left: 10px; margin-top: 14px; line-height: 1}
 .commitee dt{ font-size: 18px; letter-spacing:1.1pt; margin-top: 14px; line-height: 1.2}
@@ -121,12 +121,15 @@ h5.footer-sponsor-title { padding: 0 0 0 135px; margin: 27px 45px 15px; text-ali
 div.contact { text-align: left; }
 .map {max-width:500px;width:100%;height:450px;}
  
-h2 { letter-spacing:1.1pt; background-color: $base-color; border-color: $base-color;  color:#fff; font-weight: 700; font-size: 28px; text-transform: uppercase; padding-left: 15px; padding-top: 12px;	padding-bottom: 12px; }
+h2 { letter-spacing:1.1pt; background-color: $base-color; border-color: $base-color;  color:#fff; font-size: 24px; text-transform: uppercase; padding-left: 15px; padding-top: 12px;	padding-bottom: 12px; }
 h2 .glyphicon {font-size: 16px;}
-h2 a, h2 a:link, h2 a:focus,  h2 a:hover {color: #fff;	}
+h2 a, h2 a:link, h2 a:focus,  h2 a:hover {color: #fff;}
+
+.no-caps {text-transform: none; }
 
 
-h3 { letter-spacing:1pt; background-color: $alt-light; border-color: $alt-light;  color:#fff; font-weight: 500; font-size: 26px; text-transform: uppercase; padding-left: 15px; padding-top: 8px;	padding-bottom: 8px; }
+
+h3 { letter-spacing:1pt; background-color: $alt-light; border-color: $alt-light;  color:#fff; font-weight: 500; font-size: 22px; text-transform: uppercase; padding-left: 15px; padding-top: 8px;	padding-bottom: 8px; }
 
 
 h4 { letter-spacing:0pt; background-color: #fff; color:$base-dark-color; font-weight:700; font-size: 22px; padding-top: 6px;	padding-bottom: 6px; padding-left: 18px;}
@@ -153,7 +156,7 @@ nav {
 .navbar-inverse .navbar-brand {font-size: 34px;}	
 
 
-.btn-1 {font-size: 20px; letter-spacing:1.2pt; text-transform: uppercase }
+.btn-1 {font-size: 15px; letter-spacing:1.2pt; text-transform: uppercase }
 
 .btn-success, .btn-success:visited, .btn-success:link {
 color: #fff;
@@ -258,7 +261,7 @@ background-color: #fff
 	
 	
 	/*btn Start*/
-	 .btn-1 {font-size: 16px; margin-right:5px}
+	 .btn-1 {visibility:hidden;}
 	 .carousel-caption { padding: 2px; bottom: 0px;left: 0%;text-align: center;     background-color: rgba(0,0,0,0.50);
 		max-width: 100vw;}
 	.carousel-caption p {font-size: 2vw; margin: 0; line-height: 1.1; color: #fff; text-shadow: 0 1px 1px rgba(#000, 0.4);  text-align: left; }
