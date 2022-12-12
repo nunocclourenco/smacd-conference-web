@@ -70,13 +70,13 @@ a, a:link, a:focus, a:hover {color: $base-dark-color; font-weight: 500;	}
 }
 .pt_plenary-title  {
 	letter-spacing:1.1pt;
-	background-color: #FFF; border-color: #FFF; 
+	background-color: #FFF; border-color: #FFF; color:#C00000;
 	 font-size: 22px;
 	 text-transform: uppercase;
 }
 .pt_plenary-presenter {
 	letter-spacing:1.1pt;
-	background-color: #FFF; border-color: #FFF; 
+	background-color: #FFF; border-color: #FFF; color:#C00000;
 	 font-size: 16px;
 	 text-transform: uppercase;
 }
@@ -121,7 +121,7 @@ h5.footer-sponsor-title { padding: 0 0 0 135px; margin: 27px 45px 15px; text-ali
 div.contact { text-align: left; }
 .map {max-width:500px;width:100%;height:450px;}
  
-h2 { letter-spacing:1.1pt; background-color: $base-color; border-color: $base-color;  color:#fff; font-size: 24px; text-transform: uppercase; padding-left: 15px; padding-top: 12px;	padding-bottom: 12px; }
+h2 { letter-spacing:1.1pt; background-color: $base-color; border-color: $base-color;  color:#fff; font-size: 24px; text-transform: uppercase; padding-left: 15px; padding-top: 12px;	padding-bottom: 12px; text-align: left;}
 h2 .glyphicon {font-size: 16px;}
 h2 a, h2 a:link, h2 a:focus,  h2 a:hover {color: #fff;}
 
@@ -129,7 +129,7 @@ h2 a, h2 a:link, h2 a:focus,  h2 a:hover {color: #fff;}
 
 
 
-h3 { letter-spacing:1pt; background-color: $alt-light; border-color: $alt-light;  color:#fff; font-weight: 500; font-size: 22px; text-transform: uppercase; padding-left: 15px; padding-top: 8px;	padding-bottom: 8px; }
+h3 { letter-spacing:1pt; background-color: $alt-light; border-color: $alt-light;  color:#fff; font-weight: 500; font-size: 22px; text-transform: uppercase; padding-left: 15px; padding-top: 8px;	padding-bottom: 8px; text-align: left;}
 
 
 h4 { letter-spacing:0pt; background-color: #fff; color:$base-dark-color; font-weight:700; font-size: 22px; padding-top: 6px;	padding-bottom: 6px; padding-left: 18px;}
