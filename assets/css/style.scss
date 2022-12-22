@@ -63,6 +63,24 @@ a, a:link, a:focus, a:hover {color: $base-dark-color; font-weight: 500;	}
 .hof p { padding-left:8px; font-style:normal; color: #777777; font-size: 14px; border-left: 1px solid #bfe1f1; }
 .hof p em { display:block;font-size: 17px; }
 
+
+.ss_organizer  {
+	letter-spacing:1.1pt;
+	background-color: #FFF; border-color: #FFF;  color:#C00000;
+	 font-size: 20px;
+	 text-transform: uppercase;
+	padding-left: 15px; padding-bottom: 1px; padding-top: 0px;
+	margin-top: 0px;
+
+}
+
+.ss_affiliation {
+	letter-spacing:1.1pt;
+	background-color: #FFF; border-color: #FFF; color:#C00000;
+	 font-size: 14px;
+	 text-transform: uppercase;
+}
+
 .pt_plenary  {
 	letter-spacing:1.1pt;
 	background-color: #FFF; border-color: #FFF;  color:#C00000;
