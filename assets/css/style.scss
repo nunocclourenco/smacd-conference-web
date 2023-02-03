@@ -34,7 +34,7 @@ footer {background-color:#f7f7f7;border-top: 1px solid #ddd;}
 /*btn Start*/
 .btn-box {
 	position: absolute;
-	padding: 15px; bottom: 0px; left: 60%; right: auto;text-align: center;   
+	padding: 15px; bottom: 0px; left: 65%; right: auto;text-align: center;   
     margin-bottom: 20px;margin-left: 20px; margin-right: 20px;
 	max-width: 350px;  padding-top: 60px; }
 
@@ -49,9 +49,10 @@ a, a:link, a:focus, a:hover {color: $base-dark-color; font-weight: 500;	}
 .bc {color: $base-dark-color}
 .altc {color:$alt-color}
 .redc {color:#900000;}
+.red {color: red;}
 .grayb {background-color:#E0E0E0;border-color:#E0E0E0;}
 
-
+.delete {text-decoration:line-through; font-size: 14px;}
 
 .hof { font-style:italic; font-size:20px; color:#a1d1e7;  }
 .hof div {display: inline-block; vertical-align:top; }
