@@ -9,15 +9,19 @@
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav navbar-right">
         
-        <li><a href="{{ 'call-for-papers' | relative_url }}">Call for Papers</a></li>
-        <li><a href="{{ 'call-for-competition' | relative_url }}"">EDA Competition</a></li>
-        <li><a href="{{ 'call-for-ic-design-contest' | relative_url }}"">IC Design Contest</a></li>
+        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Student Constests<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="{{ 'call-for-competition' | relative_url }}"">EDA Competition</a></li>
+            <li><a href="{{ 'call-for-ic-design-contest' | relative_url }}"">IC Design Contest</a></li>
+          </ul>
+        </li>
 
         <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Conference<span class="caret"></span></a>
           <ul class="dropdown-menu">
             <li><a href="{{ 'call-for-papers' | relative_url }}">Call for Papers</a></li>
             <li><a href="{{ 'special-sessions' | relative_url }}">Tutorial & Special Sessions</a></li>
             <li><a href="{{ 'paper-submission' | relative_url }}">Paper Submission</a></li>
+            <li><a href="{{ 'camera-ready-paper-submission' | relative_url }}">Camera Ready Paper Submission</a></li>
             
             <li><a href="{{ 'committees' | relative_url }}">Committees</a></li>
             <li><a href="{{ 'previous-editions' | relative_url }}">Previous Editions</a></li>
@@ -59,11 +63,9 @@
 
       <div class="btn-box">
         <div class = "btn-group " > 
-        <a href="{{ 'content/SMACD23_FinalCFP.pdf' | relative_url }}" target="_blank" class="btn btn-block btn-success btn-1" >Call for Papers</a>
-        <a href="{{ 'content/SMACD23_CFC.pdf' | relative_url }}" target="_blank" class="btn btn-block btn-success btn-1" >Call for EDA Competition</a>
-        <a href="{{ 'content/SMACD23_CFIC.pdf' | relative_url }}" target="_blank" class="btn btn-block btn-success btn-1" >Call for IC Design Contest</a>
-        <a href="{{ 'special-sessions' | relative_url }}" target="_blank" class="btn btn-block btn-success btn-1" >Tutorials and Special Sessions</a>
-        <a href="{{ 'paper-submission' | relative_url }}" target="_blank" class="btn btn-block btn-warning btn-1" >Paper Submission</a>
+        
+        <a href="{{ 'registration' | relative_url }}" target="_blank" class="btn btn-block btn-success btn-1" >Registration</a>
+        <a href="{{ 'camera-ready-paper-submission' | relative_url }}" target="_blank" class="btn btn-block btn-success btn-1" >Camera Ready Paper Submission</a>
         
       </div> 
     </div> 

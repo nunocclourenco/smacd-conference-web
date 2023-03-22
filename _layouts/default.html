@@ -7,8 +7,15 @@
 
     {%- include header.html -%}
 
+
     <main class="page-content" aria-label="Content">
       <div class="container">
+        {% if page.path contains 'previous-editions/20' %}
+        {% assign my_array = page.path | split: "/" %}
+        <div class="row"> <div class="col-md-12">
+          <h1> CONTENT FROM PREVIOUS EDITION: SMACD {{ my_array | slice: 1 }}</h1>
+        </div></div>  
+        {% endif %}
         {{ content }}
       </div>
     </main>
