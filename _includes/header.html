@@ -8,7 +8,15 @@
     </div>
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav navbar-right">
-        
+        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Programme<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="{{ 'schedule' | relative_url }}">Schedule</a></li>
+            <li><a href="{{ 'plenary-talks' | relative_url }}">Plenary Talks</a></li>
+            <li><a href="{{ 'tutorials' | relative_url }}">Tutorials</a></li>
+            <li><a href="{{ 'special-sessions' | relative_url }}">Special Sessions</a></li>
+            <li><a href="{{ 'technical-program' | relative_url }}"">Technical Programme</a></li>
+          </ul>
+        </li>
         <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Student Constests<span class="caret"></span></a>
           <ul class="dropdown-menu">
             <li><a href="{{ 'call-for-competition' | relative_url }}"">EDA Competition</a></li>
@@ -20,7 +28,6 @@
         <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Conference<span class="caret"></span></a>
           <ul class="dropdown-menu">
             <li><a href="{{ 'call-for-papers' | relative_url }}">Call for Papers</a></li>
-            <li><a href="{{ 'special-sessions' | relative_url }}">Tutorial & Special Sessions</a></li>
             <li><a href="{{ 'paper-submission' | relative_url }}">Paper Submission</a></li>
             <li><a href="{{ 'camera-ready-paper-submission' | relative_url }}">Camera Ready Paper Submission</a></li>
             
@@ -66,7 +73,7 @@
         <div class = "btn-group " > 
         
         <a href="{{ 'registration' | relative_url }}" target="_blank" class="btn btn-block btn-success btn-1" >Registration</a>
-        <a href="{{ 'camera-ready-paper-submission' | relative_url }}" target="_blank" class="btn btn-block btn-success btn-1" >Camera Ready Paper Submission</a>
+        <a href="{{ 'schedule' | relative_url }}" target="_blank" class="btn btn-block btn-success btn-1" >Preliminary Program</a>
         
       </div> 
     </div> 
@@ -86,11 +93,11 @@
   </div>
 
 
-  <div class="row hclass"><div class="col-md-12">
+  <!--div class="row hclass"><div class="col-md-12">
     
     <h4 class="center"> 
       <br/><span class="red">Camera Ready Paper and Early Registration: April 3<sup>rd</sup>.</span> </h4>
 
-  </div></div> 
+  </div></div--> 
 
 </div>	

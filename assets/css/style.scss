@@ -173,8 +173,8 @@ h4 { letter-spacing:0pt; background-color: #fff; color:$base-dark-color; font-we
 
 /* nav styles */
 nav {
-    margin-top: 20px;
-	padding-top: 5px;
+    margin-top: 0px;
+	padding-top: 25px;
 	padding-bottom: 5px;
 }
 .navbar-inverse, .navbar-inverse .navbar-brand, .navbar-inverse .navbar-nav>li>a {background: #fff; letter-spacing:2pt; border-color: #fff;  color:$base-dark-color;}
@@ -187,7 +187,19 @@ nav {
 
 .navbar-inverse, .navbar-inverse .navbar-nav>li>a { font-size: 28px;}	
 .navbar-inverse .navbar-brand {font-size: 34px;}	
+.anchor{
+	display: block;
+	height: 70px; /*same height as header*/
+	margin-top: -70px; /*same height as header*/
+	visibility: hidden;
+  }
 
+  .anchor_session{
+	display: block;
+	height: 82px; /*same height as header*/
+	margin-top: -82px; /*same height as header*/
+	visibility: hidden;
+  }
 
 .btn-1 {font-size: 15px; letter-spacing:1.2pt; text-transform: uppercase }
 
