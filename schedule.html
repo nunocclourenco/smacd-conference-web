@@ -5,18 +5,21 @@ title: Schedule
 <style>
 	.rooms{	text-align: center;	background-color: #f5f5f5;		font-style: italic;}
 	.room_i {font-weight: normal;	font-style: italic;}
-	.session { background-color: rgb(241, 113, 113);text-align: center;color: #FFF;	}
+	.session { background-color:#DEC888;text-align: center;color: #FFF;	}
 	.session>td>a {	color: #FFF;}
 	.session>td>a:link {color: #FFF;}
 	.session>td>a:hover {color: #C0C0C0;	}
 	.session .S {	background-color:  #6fa7df	}
-  .session .B {	background-color:  #bfc0be;}
+  .session .B {	background-color:  #FAC196;}
   .session .D {	background-color:  #badd1c;} 
   .session .C {	background-color:  #c3da60;} 
   .session .R {	background-color: rgb(119, 119, 119);	}
   .session .P {	background-color: rgb(240, 147, 220); }
-  .session .T {	background-color: rgb(248, 199, 126); }
+  .session .T {	background-color: #B6D7A8; }
 	.session .N {	background-color: #FFF;	}
+  .lunch {	background-color: rgb(241, 113, 113);	}
+  .session .OC {	background-color:   #FF9900;	}
+
 
 	.plenary{	background-color: rgb(245,245,245); font-weight: bold; 	text-align: center;	}
 	
@@ -87,31 +90,35 @@ title: Schedule
     <br/><span class="room_i">a tutorial by José M. De La Rosa, Instituto de Microelectrónica de Sevilla, Spain</span></td>
   </tr>
 
- <tr> <td class = "time">10:00</td><td  colspan="2">Coffee Break</td></tr>
+ <tr> <td class = "time">10:00</td><td class="lunch" colspan="2">Coffee Break</td></tr>
 
  <tr class = "session"> <td class = "time">10:30</td>
+  <td class="N"></td>
   <td class="T">ADE Advanced Optimization: Open framework for ML/AI algorithms integration and visualization
     <a href="{{ 'tutorials' | relative_url }}#T3"><small>&nbsp;<span class="glyphicon glyphicon-log-in" aria-hidden="true"></span></small></a>
     <br/><span class="room_i">a tutorial by Valery Fouron, Ron Pongratz, Marat Yakupov and Klaus Cerny, Cadence</span></td>
-  <td class="N"></td>
  </tr>
 
  <tr  class = "session">
   <td class = "time">11:30</td>
-  <td  colspan="2"><br>Opening Session and Welcome Lunch<br><br></td>
+  <td class="OC" ><br>Opening Session<br><br></td>
+  <td class="N"></td>
  </tr>
-
-  <tr  class = "session" ><td class = "time">13:30</td>
-    <td class="S">A1 | Artificially Intelligent EDA  <a href="{{ 'technical-program' | relative_url }}#A1"><small>&nbsp;<span class="glyphicon glyphicon-log-in" aria-hidden="true"></span></small></a></td>
+ <tr >
+  <td class = "time">12:30</td>
+  <td class="lunch" colspan="2">Welcome Lunch (Hotel VidaMar)</td>
+ </tr>
+  <tr  class = "session" ><td class = "time">14:00</td>
+    <td class="S">A1 | Artificially Intelliget EDA  <a href="{{ 'technical-program' | relative_url }}#A1"><small>&nbsp;<span class="glyphicon glyphicon-log-in" aria-hidden="true"></span></small></a></td>
     <td class="S">B1 | SS: Shaping Future Electronic Circuits and Systems with Emerging Memory Devices <a href="{{ 'technical-program' | relative_url }}#B1"><small>&nbsp;<span class="glyphicon glyphicon-log-in" aria-hidden="true"></span></small></a></td>
   </tr>
-    <tr> <td class = "time">15:10</td><td  colspan="2">Coffee Break</td></tr>
+    <tr> <td class = "time">15:40</td><td class="lunch" colspan="2">Coffee Break</td></tr>
 
-  <tr  class = "session" ><td class = "time">15:30</td>
+  <tr  class = "session" ><td class = "time">16:00</td>
   <td class="C">A2 | EDA Competition I <a href="{{ 'technical-program' | relative_url }}#A2"><small>&nbsp;<span class="glyphicon glyphicon-log-in" aria-hidden="true"></span></small></a></td>
   <td class="S">B2 | Systematic Circuit Design Approaches <a href="{{ 'technical-program' | relative_url }}#B2"><small>&nbsp;<span class="glyphicon glyphicon-log-in" aria-hidden="true"></span></small></a></td>
   </tr>
-  <tr> <td class = "time">17:30</td><td  colspan="2"></td></tr>
+  <tr> <td class = "time">18:00</td><td  colspan="2"></td></tr>
   <tr style="border: 0;">  <td colspan="3" style="border: 0;"></td> </tr>
   <tr style="border: 0;">  <td colspan="3" style="border: 0;"></td> </tr>
  
@@ -129,13 +136,15 @@ title: Schedule
   
    <tr  class = "session">
     <td class = "time">08:30</td>
-    <td  colspan="2"><a href="{{ 'plenary-talks' | relative_url }}#P1"> Modeling, Analysis, Simulation, and Optimization. The Bedrock of Engineering</a>
+    <td ><a href="{{ 'plenary-talks' | relative_url }}#P1"> Modeling, Analysis, Simulation, and Optimization. The Bedrock of Engineering</a>
     <a href="{{ 'plenary-talks' | relative_url }}#P1"><small>&nbsp;<span class="glyphicon glyphicon-log-in" aria-hidden="true"></span></small></a>
     <br/><span class="room_i">by Sani Nassif, CEO Radyalis, USA </span></td>
+    <td class="N"></td>
    </tr>
    <tr  class = "session">
     <td class = "time">09:30</td>
-    <td  class="B" colspan="2">Company Presentation</td>
+    <td  class="B">Company Presentation</td>
+    <td class="N"></td>
    </tr>
    <tr class = "session">
     <td class = "time">10:00</td>
@@ -146,22 +155,23 @@ title: Schedule
     <td class="C">B3 | IC Design Contest <a href="{{ 'technical-program' | relative_url }}#B3"><small>&nbsp;<span class="glyphicon glyphicon-log-in" aria-hidden="true"></span></small></a></td>
   </tr>
    <tr >
-    <td class = "time">12:10</td>
-    <td  colspan="2">Lunch</td>
+    <td class = "time">12:30</td>
+    <td class="lunch" colspan="2">Lunch (Hotel VidaMar)</td>
    </tr>
    <tr class = "session">
-    <td class = "time">13:30</td>
+    <td class = "time">14:00</td>
     <td class="S">A4 | Advances in Hardware Security <a href="{{ 'technical-program' | relative_url }}#A4"><small>&nbsp;<span class="glyphicon glyphicon-log-in" aria-hidden="true"></span></small></a></td>
     <td class="S">B4 | Modeling in Conventional and Emerging Technologies for Circuit and System Design <a href="{{ 'technical-program' | relative_url }}#B4"><small>&nbsp;<span class="glyphicon glyphicon-log-in" aria-hidden="true"></span></small></a></td>
   </tr>
    <tr class = "session">
-    <td class = "time">14:50</td>
+    <td class = "time">15:20</td>
     <td  class="P" colspan="2">Poster Session <a href="{{ 'technical-program' | relative_url }}#PS"><small>&nbsp;<span class="glyphicon glyphicon-log-in" aria-hidden="true"></span></small> </a> & Coffee Break</a></td>
    </tr>
-   <tr  class = "session" ><td class = "time">15:30</td>
+   <tr  class = "session" ><td class = "time">16:00</td>
     <td class="C">A5 | EDA Competition II <a href="{{ 'technical-program' | relative_url }}#A5"><small>&nbsp;<span class="glyphicon glyphicon-log-in" aria-hidden="true"></span></small></a></td>
     <td class="S">B5 | Digital Verification and Emerging Computing Architectures <a href="{{ 'technical-program' | relative_url }}#B5"><small>&nbsp;<span class="glyphicon glyphicon-log-in" aria-hidden="true"></span></small></a></td>
   </tr>
+  <tr> <td class = "time">18:00</td><td  colspan="2"></td></tr>
    <tr  class = "plenary">
     <td class = "time">20:00</td>
     <td  colspan="2">Gala Dinner
@@ -183,18 +193,15 @@ title: Schedule
       <td style = 	"width: 50%;">Sunset I</td>
      </tr>
      <tr  class = "session">
-      <td class = "time">08:30</td>
-      <td  colspan="2"><a href="{{ 'plenary-talks' | relative_url }}#P2"> Synthesis for evolving computing platforms</a>
+      <td class = "time">09:00</td>
+      <td ><a href="{{ 'plenary-talks' | relative_url }}#P2"> Synthesis for evolving computing platforms</a>
       <a href="{{ 'plenary-talks' | relative_url }}#P2"><small>&nbsp;<span class="glyphicon glyphicon-log-in" aria-hidden="true"></span></small></a>
       <br/><span class="room_i">by Giovanni De Micheli, EPFL Lausanne, Switzerland </span></td>
-     </tr>
-     <tr  class = "session">
-      <td class = "time">09:30</td>
-      <td  class="B" colspan="2">Company Presentation</td>
+      <td class="N"></td>
      </tr>
      <tr >
       <td class = "time">10:00</td>
-      <td colspan="2">Coffee Break</td>
+      <td class="lunch" colspan="2">Coffee Break</td>
      </tr>
      <tr  class = "session" ><td class = "time">10:30</td>
         <td class="S">A6 | Reliable IC Design to the Rescue <a href="{{ 'technical-program' | relative_url }}#A6"><small>&nbsp;<span class="glyphicon glyphicon-log-in" aria-hidden="true"></span></small></a></td>
@@ -202,20 +209,21 @@ title: Schedule
  
       </tr>
      <tr >
-      <td class = "time">12:10</td>
-      <td  colspan="2">Lunch</td>
+      <td class = "time">12:30</td>
+      <td class="lunch" colspan="2">Lunch (Hotel VidaMar)</td>
      </tr>
      <tr class = "session">
-      <td class = "time">13:30</td>
+      <td class = "time">14:00</td>
       <td class="S">A7 | SS: Low-Voltage Low-Power Integrated Circuits for Biomedical Applications <a href="{{ 'technical-program' | relative_url }}#A7"><small>&nbsp;<span class="glyphicon glyphicon-log-in" aria-hidden="true"></span></small></a></td>
       <td class="S">B7 | Powering Everyday Electronics <a href="{{ 'technical-program' | relative_url }}#B7"><small>&nbsp;<span class="glyphicon glyphicon-log-in" aria-hidden="true"></span></small></a></td>
      </tr>
      <tr >
-      <td class = "time">15:10</td>
-      <td colspan="2">Coffee Break</td>
+      <td class = "time">15:40</td>
+      <td class="lunch" colspan="2">Coffee Break</td>
      </tr>
     
-     <tr class = "plenary"><td class = "time">15:30</td><td colspan="2">Closing & Award Ceremony <br/><span class="room_i"></span></td></td></tr>
+     <tr class = "session"><td class = "time">16:00</td><td class="OC">Closing & Award Ceremony <br/><span class="room_i"></span></td>  <td class="N"></td></tr>
+     <tr> <td class = "time">18:00</td><td  colspan="2"></td></tr>
       <tr style="border: 0;">  <td colspan="3" style="border: 0;"></td> </tr>
 
 
