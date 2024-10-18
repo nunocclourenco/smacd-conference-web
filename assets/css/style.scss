@@ -1,17 +1,16 @@
 ---
 ---
 
-$base-color: #88BBCC;
-$base-dark-color:  #338899;
+$base-color: #244279;
+$base-dark-color:  #244279;
 $base-light: rgba($base-color, 0.1);
 $base-ulight: rgba($base-color, 0.05);
-$alt-color: #573;
+$alt-color: #fcbf44;
 $alt-light: rgba($alt-color, 0.7);
 
 body { font-family: "Poppins", sans-serif; color: #222222; text-align: justify; font-size: 18px; padding-top: 50px; }
 
-footer {background-color:#f7f7f7;border-top: 1px solid #ddd;}
-.header { background: #05A;}
+.header { background: rgb(85, 91, 97);}
 
 .row-centered { margin-top: 20px;}
 
@@ -28,9 +27,6 @@ footer {background-color:#f7f7f7;border-top: 1px solid #ddd;}
 	visibility: visible;
   }
 
-.carousel-caption { padding: 15px; bottom: 0px; left: 0%; right: auto;text-align: center;     background-color: rgba(0,0,0,0.50);
-    margin-bottom: 20px;margin-left: 20px;}
-
 /*btn Start*/
 .btn-box {
 	position: absolute;
@@ -39,10 +35,77 @@ footer {background-color:#f7f7f7;border-top: 1px solid #ddd;}
 	max-width: 350px;  padding-top: 60px; }
 
 
-.carousel-caption p {font-size: 18px; margin: 0; line-height: 1.1; color: #fff; text-shadow: 0 1px 1px rgba(#000, 0.4);  text-align: center; }
-.carousel-caption h1 { font-size: 80px; margin: 0; line-height: 1; text-align: center; }
+/* Container */
+.carousel-caption { 
+	padding: 20px; 
+	bottom: 0; 
+	left: 0; 
+	right: auto; 
+	text-align: center; 
+	background-color: rgba(0,0,0,0.5); 
+	margin-bottom: 20px; 
+	margin-left: 20px; 
+	border-radius: 15px;
+  }
+  
+  /* Fancy Title */
+  .fancy-title {
+	font-size: 80px; 
+	margin: 0; 
+	line-height: 1; 
+	color: #fff; 
+	font-family: 'Playfair Display', serif; 
+	text-align: center; 
+	text-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+	position: relative;
+	z-index: 1;
+  }
+  
+  /* Breathing Effect */
+//   .fancy-title::before {
+// 	content: "";
+// 	position: absolute;
+// 	top: 50%;
+// 	left: 50%;
+// 	width: 120%;
+// 	height: 120%;
+// 	background: rgba(255, 255, 255, 0.4);
+// 	border-radius: 50%;
+// 	transform: translate(-50%, -50%) scale(1);
+// 	z-index: -1;
+// 	animation: breathing 4s ease-in-out infinite;
+//   }
+  
+  /* Caption Date */
+  .caption-date {
+	font-size: 24px; 
+	margin: 10px 0 0; 
+	line-height: 1.5; 
+	color: #fff; 
+	font-family: 'Open Sans', sans-serif; 
+	text-align: center; 
+	text-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
+	letter-spacing: 1px;
+	animation: fade-in 2s ease-in-out;
+  }
+  
+//   /* Breathing animation for background glow */
+//   @keyframes breathing {
+// 	0% { transform: translate(-50%, -50%) scale(1); opacity: 0.5; }
+// 	50% { transform: translate(-50%, -50%) scale(1.2); opacity: 1; }
+// 	100% { transform: translate(-50%, -50%) scale(1); opacity: 0.5; }
+//   }
+  
+  /* Smooth fade-in for the date text */
+  @keyframes fade-in {
+	0% { opacity: 0; }
+	100% { opacity: 1; }
+  }
+  
 
-.carousel-caption-logo{ background-color:#fff; max-width: 500px;padding-right: 2px;padding-left: 0px;}
+
+
+
 
 a, a:link, a:focus, a:hover {color: $base-dark-color; font-weight: 500;	}
 
@@ -171,189 +234,306 @@ h4 { letter-spacing:0pt; background-color: #fff; color:$base-dark-color; font-we
 
 
 
-/* nav styles */
-nav {
-    margin-top: 0px;
-	padding-top: 25px;
-	padding-bottom: 5px;
-}
-.navbar-inverse, .navbar-inverse .navbar-brand, .navbar-inverse .navbar-nav>li>a {background: #fff; letter-spacing:2pt; border-color: #fff;  color:$base-dark-color;}
-.navbar-inverse .navbar-nav>.open>a, .navbar-inverse  .navbar-nav>.open>a:hover,.navbar-inverse  .navbar-nav>.open>a:focus  {background:$base-light; letter-spacing:2pt; border-color: #fff;  color:$base-dark-color;}
-.navbar-inverse .navbar-nav>li>a:hover, .navbar-inverse .navbar-nav>li>a:focus, .navbar-inverse .navbar-brand:hover,.navbar-inverse .navbar-brand:focus { background:$base-light; color: $base-dark-color;}
-.navbar-inverse .dropdown-menu>li>a {color: $base-dark-color; 	font-size: 20px;}
-.navbar-inverse .dropdown-menu>li>a:hover,	.dropdown-menu>li>a:focus { background: $base-light; }
-.navbar-inverse .navbar-toggle{  border-color: $base-dark-color;  background-color: $base-dark-color;}
-.navbar-inverse .navbar-toggle:hover{  background-color: $base-dark-color;}
-
-.navbar-inverse, .navbar-inverse .navbar-nav>li>a { font-size: 28px;}	
-.navbar-inverse .navbar-brand {font-size: 34px;}	
-.anchor{
-	display: block;
-	height: 70px; /*same height as header*/
-	margin-top: -70px; /*same height as header*/
-	visibility: hidden;
+///navbar fix?
+/* General header and navbar styles */
+.header {
+	background-color: #f8f8f85b;
+	padding: 20px 0;
+	width: 100%;
+  }
+  
+  .navbar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 30px;
+  }
+  
+  .logo img {
+	width: auto ;
+	height: auto;
+  }
+  
+  .nav-links {
+	display: flex;
+	gap: 30px;
+  }
+  
+  .nav-item {
+	position: relative; /* This allows dropdowns to position themselves */
+	font-size: 18px;
+	text-transform: uppercase;
+	padding: 10px 15px;
+	cursor: pointer;
+  }
+  
+  /* Dropdown Menu Container */
+  .dropdown-menu {
+	display: none; /* Hide dropdown by default */
+	position: absolute; /* Position dropdown relative to its parent */
+	top: 100%; /* Align dropdown below the nav item */
+	left: 0;
+	background-color: #fff; /* Background color for the dropdown */
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional shadow for dropdown */
+	padding: 10px 0;
+	min-width: 150px;
+	z-index: 999; /* Ensure dropdown appears above other elements */
+  }
+  
+  /* Dropdown Links */
+  .dropdown-menu a {
+	display: block; /* Make each link a block element */
+	padding: 10px 20px; /* Add padding inside each link */
+	color: #333;
+	text-decoration: none; /* Remove underline */
+	transition: background 0.3s;
+  }
+  
+  /* Dropdown hover styles */
+  .dropdown-menu a:hover {
+	background-color: #f0f0f0; /* Change background on hover */
+  }
+  
+  /* Show dropdown when hovering over the nav item */
+  .nav-item.dropdown:hover .dropdown-menu {
+	display: block; /* Show dropdown on hover */
+  }
+  
+  /* Additional hover effects for navigation items */
+  .nav-item:hover {
+	color: #007bff; /* Optional: Change text color on hover */
+	transition: color 0.3s;
+  }
+  
+/* Header Menu Fonts */
+.navbar-nav li a {
+	font-family: 'Playfair Display', serif;
+	font-size: 18px;
+	font-weight: 700; /* Bold for main menu */
+	letter-spacing: 1px;
+	color: #fff;
+	transition: color 0.3s ease;
+  }
+  
+  .navbar-nav li a:hover {
+	color: #f8c471; /* Fancy hover color */
+  }
+  
+  /* Dropdown Menu Styling */
+  .dropdown-menu {
+	font-family: 'Poppins', sans-serif;
+	font-size: 16px;
+	font-weight: 500;
+	background-color: #244279;
+	color: #fff;
+	border: none;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .dropdown-menu li a {
+	color: #fff;
+	padding: 10px 15px;
+	transition: background-color 0.3s ease;
+  }
+  
+  .dropdown-menu li a:hover {
+	background-color: #f8c471;
+	color: #333;
+  }
+  
+  /* Dropdown Arrow Styling */
+  .navbar-nav li .dropdown-toggle::after {
+	border-top: 4px solid #f8c471; /* Customize dropdown arrow */
+  }
+  
+  /* Make the logo bigger */
+.navbar-brand img {
+	width: 150px; /* Adjust the width as per your needs */
+	height: auto; /* Keeps the aspect ratio intact */
+	transition: all 0.3s ease; /* Adds a smooth transition effect */
+  }
+  
+  .navbar-brand img:hover {
+	transform: scale(1.05); /* Optional: Add a slight hover effect to make the logo pop */
   }
 
-  .anchor_session{
-	display: block;
-	height: 82px; /*same height as header*/
-	margin-top: -82px; /*same height as header*/
-	visibility: hidden;
+
+
+
+///// navbar fix ends
+
+////SLider
+/* Image Slider Container */
+/* Image Slider Container */
+.image-slider {
+	position: relative;
+	max-width: 100%;
+	margin: 20px auto;
+	overflow: hidden;
+	border-radius: 8px;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   }
+  
+  /* Slides */
+  .slides img {
+	width: 100%;
+	display: none;
+	border-radius: 8px;
+  }
+  
+  /* Show the first image */
+  .slides img:first-child {
+	display: block;
+  }
+  
+/// 
 
-.btn-1 {font-size: 15px; letter-spacing:1.2pt; text-transform: uppercase }
 
-.btn-warning {
-	border-color: #fff
+
+
+/////// important msg ends
+/// 
+/// 
+.button-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	color: white;
+	text-align: center;
+	margin: 30px auto;
+	max-width: 800px;
+  }
+  
+  .button {
+	padding: 10px 20px;
+	background-color: #244279;
+	color: white;
+	border: 3px solid white;
+	text-decoration: none;
+	font-weight: bold;
+	border-radius: 5px;
+	transition: background-color 0.3s ease;
+  }
+  
+  .button:hover {
+	transform: scale(1.1);
+	color: white;
+	background-color: #ffd740;
+	box-shadow: 0px 0px 50px rgba(255, 200, 0, 1), 0px 0px 80px rgba(255, 200, 0, 0.6);
+  }
+  
+  /* Middle Button Enhancements */
+  .main-button {
+	font-size: 1.2em;
+	color: white;
+	padding: 15px 50px;
+	background-color: #ff9800;
+	border: 3px solid white;
+	transform: scale(1.3);
+	box-shadow: 0px 0px 30px rgba(255, 160, 0, 0.8), 0px 0px 50px rgba(255, 160, 0, 0.4);
+	transition: transform 0.4s ease, box-shadow 0.4s ease, background-color 0.4s ease;
+	animation: pulse 1.5s infinite;
+  }
+  
+  .main-button:hover {
+	transform: scale(1.4);
+	color: white;
+	background-color: #ffd740;
+	box-shadow: 0px 0px 50px rgba(255, 200, 0, 1), 0px 0px 80px rgba(255, 200, 0, 0.6);
+  }
+  
+  /* Pulse Animation */
+  @keyframes pulse {
+	0% {
+	  transform: scale(1.1);
+	  box-shadow: 0px 0px 20px rgba(255, 160, 0, 0.8), 0px 0px 50px rgba(255, 160, 0, 0.4);
 	}
-
-.btn-success, .btn-success:visited, .btn-success:link {
-color: #fff;
-background-color: #8ba70a;
-border-color: #fff
-}
-
-.btn-success.focus,
-.btn-success:focus {
-color: #fff;
-background-color: #637a0f;
-border-color: #fff
-}
-
-.btn-success:hover {
-color: #fff;
-background-color: #637a0f;
-border-color: #fff
-}
-
-.btn-success.active,
-.btn-success:active,
-.open>.dropdown-toggle.btn-success {
-color: #fff;
-background-color: #637a0f;
-border-color: #fff
-}
-
-.btn-success.active.focus,
-.btn-success.active:focus,
-.btn-success.active:hover,
-.btn-success:active.focus,
-.btn-success:active:focus,
-.btn-success:active:hover,
-.open>.dropdown-toggle.btn-success.focus,
-.open>.dropdown-toggle.btn-success:focus,
-.open>.dropdown-toggle.btn-success:hover {
-color: #fff;
-background-color: #398439;
-border-color: #255625
-}
-
-.btn-success.active,
-.btn-success:active,
-.open>.dropdown-toggle.btn-success {
-background-image: none
-}
-
-.btn-success.disabled,
-.btn-success.disabled.active,
-.btn-success.disabled.focus,
-.btn-success.disabled:active,
-.btn-success.disabled:focus,
-.btn-success.disabled:hover,
-.btn-success[disabled],
-.btn-success[disabled].active,
-.btn-success[disabled].focus,
-.btn-success[disabled]:active,
-.btn-success[disabled]:focus,
-.btn-success[disabled]:hover,
-fieldset[disabled] .btn-success,
-fieldset[disabled] .btn-success.active,
-fieldset[disabled] .btn-success.focus,
-fieldset[disabled] .btn-success:active,
-fieldset[disabled] .btn-success:focus,
-fieldset[disabled] .btn-success:hover {
-background-color: #8ba70a;
-border-color: #fff
-}
-
-.btn-success .badge {
-color: #8ba70a;
-background-color: #fff
-}
-/*btn Ende*/
-
-
-
-
-	.navbar-inverse, .navbar-inverse .navbar-nav>li>a { font-size: 20px;}	
-	.navbar-inverse .navbar-brand {font-size: 22px;}	
-	.navbar-inverse .dropdown-menu>li>a {font-size: 18px;}
-
-	
-	
-	@media (min-width: 768px) and (max-width: 1200px) {
-	.navbar-nav .open .dropdown-menu { position: static; float: none; width: auto; margin-top: 0; background-color: transparent; border: 0;  -webkit-box-shadow: none;box-shadow: none; }
-	.navbar-nav .open .dropdown-menu > li > a { line-height: 18px; color: $base-dark-color;}
-	.navbar-nav .open .dropdown-menu > li > a,.navbar-nav .open .dropdown-menu .dropdown-header {padding: 5px 15px 5px 25px; color: $base-dark-color;}
-	.dropdown-menu > li > a {display: block; padding: 3px 20px; clear: both; font-weight: normal; line-height: 1.42857143; color: $base-dark-color;  white-space: nowrap;}
-	.navbar-header { float: none; }
-	.navbar-toggle { display: block;}
-	.navbar-collapse {  border-top: 1px solid transparent; box-shadow: inset 0 1px 0 rgba(255,255,255,0.1); }
-	.navbar-collapse.collapse { display: none!important; }
-	.navbar-nav { float: none!important;/*margin: 7.5px -15px;*/ margin: 7.5px 50px 7.5px -15px  }
-	.navbar-nav>li { float: none; }
-	.navbar-nav>li>a { padding-top: 10px; padding-bottom: 10px; color: #333; }
-	.navbar-text { float: none; margin: 15px 0; }
-	/* since 3.1.0 */
-	.navbar-collapse.collapse.in { display: block!important; }
-	.collapsing { overflow: hidden!important;}
-	
-	
-	/*btn Start*/
-	 .btn-1 {visibility:hidden;}
-	 .carousel-caption { padding: 2px; bottom: 0px;left: 0%;text-align: center;     background-color: rgba(0,0,0,0.50);
-		max-width: 100vw;}
-	.carousel-caption p {font-size: 2vw; margin: 0; line-height: 1.1; color: #fff; text-shadow: 0 1px 1px rgba(#000, 0.4);  text-align: left; }
-	.carousel-caption h1 { font-size: 7vw; margin: 0; line-height: 1.1; text-align: left; }
-
+	50% {
+	  transform: scale(1.15);
+	  box-shadow: 0px 0px 30px rgba(255, 160, 0, 1), 0px 0px 60px rgba(255, 160, 0, 0.6);
 	}
-	@media (max-width: 767px) {
-	.navbar-inverse .navbar-nav .open .dropdown-menu > li > a {color: $base-dark-color;}
-	.navbar-inverse .navbar-nav .open .dropdown-menu>li>a:hover,.navbar-inverse .navbar-nav .open	.dropdown-menu>li>a:focus { color: $base-dark-color; background: $base-light;; }
-	.dl-horizontal dd {margin-left:0px;}
-	.btn-1 {visibility:hidden;}	
-	
-	 .carousel-caption { padding: 2px; bottom: 0px;left: 0%;text-align: center;     background-color: rgba(0,0,0,0.50);
-		max-width: 100vw;}
-	.carousel-caption p {font-size: 2vw; margin: 0; line-height: 1.1; color: #fff; text-shadow: 0 1px 1px rgba(#000, 0.4);  text-align: left; }
-	.carousel-caption h1 { font-size: 7vw; margin: 0; line-height: 1.1; text-align: left; }
+	100% {
+	  transform: scale(1.1);
+	  box-shadow: 0px 0px 20px rgba(255, 160, 0, 0.8), 0px 0px 50px rgba(255, 160, 0, 0.4);
+	}
+  }
+  
 
+
+
+/* Keyframe animation for fade-in effect */
+@keyframes fadeIn {
+	0% {
+	opacity: 0;
+	transform: translateY(30px);
+	}
+	100% {
+	opacity: 1;
+	transform: translateY(0);
+	}
 }
-	
-	@media (max-width: 620px) {
-		.navbar-inverse .navbar-nav .open .dropdown-menu > li > a {color: $base-dark-color;}
-		.navbar-inverse .navbar-nav .open .dropdown-menu>li>a:hover,.navbar-inverse .navbar-nav .open	.dropdown-menu>li>a:focus { color: $base-dark-color; background: $base-light;; }
-		.dl-horizontal dd {margin-left:0px;}
-		.carousel-caption-logo{background-color: rgba(255,255,255,0.0);max-width: 300px;padding-right: 2px;padding-left: 0px;}
-		
 
-		.hof-head {text-align:left; padding-left:10px; width: 100%; max-width: 100%;}
-		.hof-content {width: 100%; min-width: 430px; }
+/* Hover effects for list items */
+.important-dates ul li:hover {
+	transform: translateX(10px);
+	color: #ffebcd;
+}
 
-		.btn-1 {visibility:hidden;}	
-	 .carousel-caption { padding: 2px; bottom: 0px;left: 0%;text-align: center;     background-color: rgba(0,0,0,0.50);
-		max-width: 100vw;}
-	.carousel-caption p {font-size: 2vw; margin: 0; line-height: 1.1; color: #fff; text-shadow: 0 1px 1px rgba(#000, 0.4);  text-align: left; }
-	.carousel-caption h1 { font-size: 7vw; margin: 0; line-height: 1.1; text-align: left; }
+/* Fancy hover animation for the entire dates section */
+.important-dates:hover {
+	background: linear-gradient(135deg, #feb47b, #ff7e5f);
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+}
 
-	}
-	
-	
-	@media (max-width: 402px) {
-		.carousel-caption p {font-size: 0vw; visibility:hidden;}
-	}
-	
-	@media all and (max-width: 768px ){
-	.navbar-wrapper { position: relative;top: 0px; }
-	}
-	  
+////footer stuf
+
+.footer {
+	background-color: #2C3E50; /* Dark background for footer */
+	padding: 40px 0;
+	color: #fff; /* White text color */
+  }
+  
+  .logo-box {
+	padding: 20px; /* Space around the logo inside the box */
+	display: inline-block; /* Keeps the box around the logo */
+	transition: transform 0.3s; /* Animation for hover effect */
+  }
+  
+  .footer-logo {
+	max-width: auto; /* Adjust the size of the logos */
+	height: 120px;
+  }
+  
+  .logo-box:hover {
+	transform: scale(1.05); /* Slight zoom effect on hover */
+  }
+  
+  .social-icons a {
+	color: #fff;
+	margin: 0 10px;
+	font-size: 24px; /* Size of the social icons */
+	transition: color 0.3s ease;
+  }
+  
+  .social-icons a:hover {
+	color: #3498DB; /* Hover color for social icons */
+  }
+  
+  .footer p {
+	margin-top: 20px;
+	font-size: 14px;
+	color: #ccc; /* Lighter text for the copyright section */
+  }
+  
+
+
+/// footer stuff end
+
+
+
+//EDA page
+
+
+
+
+///
