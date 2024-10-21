@@ -1,82 +1,126 @@
 <!-- NAVBAR  =============================================== -->
-<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-  <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-        <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
-          <a class="navbar-brand" href="{{ "/" | relative_url }}">HOME</a>
-    </div>
-    <div id="navbar" class="navbar-collapse collapse">
-      <ul class="nav navbar-nav navbar-right">
-
-        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Conference<span class="caret"></span></a>
-          <ul class="dropdown-menu">
-
-            <li><a href="{{ 'hall-of-fame' | relative_url }}"">Hall of Fame</a></li>
-            <li><a href="{{ 'previous-editions' | relative_url }}">Previous Editions</a></li>
-
-            
-          </ul>
-        </li>
-        
-      </ul>
-    </div>
-  </div>
-</nav>
-
-
-<div class="container" >
-  <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="5000">
-
-    <!-- Wrapper for slides -->
-    <div class="carousel-inner">
-      <div class="item active">
-        <img src="{{ 'img/galata25.jpg' | relative_url }}" alt="İstanbul, Türkiye">
+<header class="header">
+    <nav class="navbar">
+      <!-- Logo Container -->
+      <div class="logo">
+        <a href="{{ '/' | relative_url }}">
+            <img src="{{ 'img/SMACD25/smacd25logo.png' | relative_url }}" alt="Home" style="height: 150px;">
+          </a>
       </div>
 
-      <div class="item">
-        <img src="{{ 'img/kopru25.jpg' | relative_url }}" alt="İstanbul, Türkiye">
-      </div>
-        
-
-
-
-
-      <div class="carousel-caption">
-        <h1> <b>SMACD 2025</b></h1>
-        <p class="caption-date">  7<sup>nd</sup> - 10<sup>th</sup> of July 2025, İstanbul, Türkiye </p>
-      </div>
-
-      <!--div class="btn-box">
-        <div class = "btn-group " > 
-        
-        <a href="{{ 'registration' | relative_url }}" target="_blank" class="btn btn-block btn-success btn-1" >Registration</a>
-        <a href="{{ 'guidelines' | relative_url }}" target="_blank" class="btn btn-block btn-success btn-1" >Author Guidelines</a>
-        <a href="{{ 'schedule' | relative_url }}" target="_blank" class="btn btn-block btn-success btn-1" >Programme</a>
-        
-      </div--> 
-    </div> 
-
-
-    </div>
+      
   
-    <!-- Left and right controls -->
-    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-      <span class="glyphicon glyphicon-chevron-left"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="right carousel-control" href="#myCarousel" data-slide="next">
-      <span class="glyphicon glyphicon-chevron-right"></span>
-      <span class="sr-only">Next</span>
-    </a>
-  </div>
+      <!-- Navigation Items with Dropdown -->
+      <div class="nav-links">
+        <div class="nav-item dropdown">
+          Authors
+          <div class="dropdown-menu">
+            <li><a href="{{ 'docs/SMACD25/SMACD25_pre_CFP.pdf' | relative_url }}" target="_blank">Call for Papers</a></li>
+            <li><a href="{{ 'pages/submission' | relative_url }}"> Paper Guidelines & Submission</a></li>
+            <li><a href="{{ 'pages/specialsession' | relative_url }}"> Tutorials and Special Sessions</a></li>
+            <li><a href="{{ 'pages/edacomp' | relative_url }}" > EDA Competition</a></li>
+            <li><a href="{{ 'pages/icdesign' | relative_url }}" >IC Design Contest</a></li>
+            <li><a href="{{ 'pages/camera' | relative_url }}">Camera Ready Submission</a></li>
+            <li><a href="{{ 'pages/guidelines' | relative_url }}"> Presentation Guidelines</a></li>
+          </div>
+        </div>
+        <div class="nav-item dropdown">
+            Committees
+          <div class="dropdown-menu">
+            <li><a href="{{ 'pages/committeesOr' | relative_url }}">Organizing Committee</a></li>
+            <li><a href="{{ 'pages/committeesTech' | relative_url }}">Technical Program Committee</a></li>
+            <li><a href="{{ 'pages/committeesSteer' | relative_url }}">Steering Committee</a></li>
+          </div>
+        </div>
+        <div class="nav-item dropdown">
+            Venue&Travel
+          <div class="dropdown-menu">
+            <li><a href="{{ 'pages/venue' | relative_url }}">Info</a></li>
+          </div>
+        </div>
+        <div class="nav-item dropdown">
+            Sponsorship
+          <div class="dropdown-menu">
+            <li><a href="{{ 'docs/SMACD25/SMACDSponsorshipProspectus.pdf' | relative_url }}"  target="_blank">Sponsorship Prospectus</a></li>
+            <li><a href="{{ 'sponsorsss' | relative_url }}">Sponsors</a></li>
+          </div>
+        </div>
+        <div class="nav-item dropdown">
+            History
+          <div class="dropdown-menu">
+            <li><a href="{{ 'previous-editions' | relative_url }}">Previous Editions</a></li>
+            <li><a href="{{ 'hall-of-fame' | relative_url }}">Hall of Fame</a></li>
+          </div>
+        </div>
+  
+      <!-- Social Media Icons -->
+      <div class="social-icons" style="padding-top: 5px;">
+        <a href="https://www.linkedin.com/company/smacd/about/?viewAsMember=true">
+            <img src="{{ 'img/linkedin.png' | relative_url }}" alt="Home" style="height: 30px;">
+          </a>
+        <!-- Add more social links as needed -->
+      </div>
+    </nav>
+  </header>
+  
 
 
-  <!--div class="row hclass"><div class="col-md-12">
-    
-    <h4 class="center"> 
-      <br/><span class="red">Camera Ready Paper and Early Registration: April 3<sup>rd</sup>.</span> </h4>
+  <div class="container" >
+    <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="5000" style="padding-top: 1px;padding-bottom: 1px;">
+  
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner">
+        <div class="item active">
+          <img src="{{ 'img//SMACD25/galata25.jpg' | relative_url }}" alt="İstanbul, Türkiye">
+        </div>
+  
+        <div class="item">
+          <img src="{{ 'img/SMACD25/kopru25.png' | relative_url }}" alt="İstanbul, Türkiye">
+        </div>
 
-  </div></div--> 
+        <div class="item">
+          <img src="{{ 'img/SMACD25/slide/slide2.jpg' | relative_url }}" alt="İstanbul, Türkiye">
+        </div>
+        <div class="item">
+          <img src="{{ 'img/SMACD25/slide/slide3.jpg' | relative_url }}" alt="İstanbul, Türkiye">
+        </div>
+        <div class="item">
+          <img src="{{ 'img/SMACD25/slide/slide4.jpg' | relative_url }}" alt="İstanbul, Türkiye">
+        </div>
+        <div class="item">
+          <img src="{{ 'img/SMACD25/slide/slide5.jpg' | relative_url }}" alt="İstanbul, Türkiye">
+        </div>
+        <div class="item">
+          <img src="{{ 'img/SMACD25/slide/slide6.jpg' | relative_url }}" alt="İstanbul, Türkiye">
+        </div>
+        <div class="item">
+          <img src="{{ 'img/SMACD25/slide/slide7.jpg' | relative_url }}" alt="İstanbul, Türkiye">
+        </div>
+  
+        <!-- Left and right controls -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right"></span>
+          <span class="sr-only">Next</span>
+        </a>
 
-</div>	
+
+
+
+        <div class="carousel-caption">
+          <h1 class="fancy-title"> <b>SMACD 2025</b></h1>
+          <p class="caption-date">7<sup>th</sup> - 10<sup>th</sup> of July 2025, Istanbul, Turkiye</p>
+        </div>
+        
+  
+
+      </div> 
+
+      <div class="button-container">
+        <a href="{{ 'docs/SMACD25/SMACD25_pre_CFEDA.pdf' | relative_url }}"  target="_blank" class="button">EDA Competition</a>
+        <a href="{{ 'docs/SMACD25/SMACD25_pre_CFP.pdf' | relative_url }}"  target="_blank" class="button main-button">Call for PAPERS!</a>
+        <a href="{{ 'docs/SMACD25/SMACD25_PRE_CFICDC.pdf' | relative_url }}"  target="_blank" class="button">IC Design Contest</a>
+      </div>
