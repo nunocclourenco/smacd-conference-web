@@ -525,6 +525,162 @@ h4 { letter-spacing:0pt; background-color: #fff; color:$base-dark-color; font-we
 	color: #ccc; /* Lighter text for the copyright section */
   }
   
+  .sponsors-section h1 {
+	font-size: 1.5em;
+	text-align: center;
+	margin-bottom: 30px;
+	// text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+	// background: rgba(0, 0, 0, 0.3);
+  }
+
+  
+  .sponsors-section h2 {
+	font-size: 1.5em;
+	text-align: center;
+	
+	margin-bottom: 30px;
+	text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+	
+  }
+// golden header start
+.sponsors-section h5{
+	background: linear-gradient(45deg, #FFD700, #FFAE42, #FFD700);
+	background-size: 200% 200%;
+	color: white; /* Adjust text color if needed */
+	padding: 10px 20px;
+	text-align: center;
+	font-family: 'Cinzel', serif;
+	font-size: 2em;
+	font-weight: bold;
+	border-radius: 8px;
+	animation: goldBackgroundShimmer 5s ease-in-out infinite;
+	box-shadow: 0 4px 15px rgba(255, 215, 0, 0.4);
+  }
+  
+  /* Gold Shimmer Animation */
+  @keyframes goldBackgroundShimmer {
+	0% { background-position: 0% 50%; }
+	50% { background-position: 100% 50%; }
+	100% { background-position: 0% 50%; }
+  }
+  
+// golden header ends
+// silver starts
+
+.sponsors-section h4{
+	background: linear-gradient(45deg, #C0C0C0, #D3D3D3, #C0C0C0);
+	background-size: 200% 200%;
+	color: white;
+	padding: 10px 20px;
+	text-align: center;
+	font-size: 2em;
+	font-weight: bold;
+	border-radius: 8px;
+	font-family: 'Cinzel', serif; /* Classic font */
+	animation: silverBackgroundShimmer 5s ease-in-out infinite;
+	box-shadow: 0 4px 15px rgba(192, 192, 192, 0.4);
+  }
+  
+  @keyframes silverBackgroundShimmer {
+	0% { background-position: 0% 50%; }
+	50% { background-position: 100% 50%; }
+	100% { background-position: 0% 50%; }
+  }
+  
+
+
+
+
+
+//silver ends
+
+//bronze starts
+.sponsors-section h6 {
+	background: linear-gradient(135deg, #e6b35c, #d49a3b, #e3a54d, #d49a3b, #e6b35c);
+	background-size: 300% 300%;
+	color: white;
+	padding: 12px 24px;
+	text-align: center;
+	font-size: 2em;
+	font-weight: bold;
+	border-radius: 10px;
+	font-family: 'Playfair Display', serif;
+	animation: bronzeShimmer 6s ease-in-out infinite;
+	box-shadow: 0 4px 15px rgba(165, 105, 25, 0.5);
+	position: relative;
+	overflow: hidden;
+  }
+  
+  
+  @keyframes bronzeShimmer {
+	0% { background-position: 0% 50%; }
+	50% { background-position: 100% 50%; }
+	100% { background-position: 0% 50%; }
+  }
+  
+//bronze ends
+  .sponsor-category {
+	margin-bottom: 40px;
+	text-align: center;
+	padding: 20px;
+	border-radius: 10px;
+	animation: fadeInUp 1s ease-out;
+  }
+  
+  .sponsor-category h3 {
+	font-size: 1.5em;
+	margin-bottom: 15px;
+	color: #fff;
+	text-align: center;
+  }
+  
+  .sponsor {
+	display: inline-block;
+	margin: 15px;
+	text-align: center;
+	transition: transform 0.3s ease;
+  }
+  
+  .sponsor img {
+	max-width: 250px;
+	height: auto;
+	border-radius: 10px;
+	// box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+	transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .sponsor:hover img {
+	transform: scale(1.1);
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  }
+  
+  .sponsor p {
+	margin-top: 10px;
+	font-weight: bold;
+	font-size: 1.1em;
+	color: #ffeb3b;
+  }
+  
+
+  
+  /* Fade in animation */
+  @keyframes fadeInUp {
+	from {
+	  opacity: 0;
+	  transform: translateY(20px);
+	}
+	to {
+	  opacity: 1;
+	  transform: translateY(0);
+	}
+  }
+
+
+
+
+
+
+
 
 
 /// footer stuff end
@@ -532,6 +688,8 @@ h4 { letter-spacing:0pt; background-color: #fff; color:$base-dark-color; font-we
 
 
 //EDA page
+
+
 
 
 
