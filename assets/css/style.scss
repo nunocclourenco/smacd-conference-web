@@ -617,8 +617,30 @@ h4 { letter-spacing:0pt; background-color: #fff; color:$base-dark-color; font-we
 	50% { background-position: 100% 50%; }
 	100% { background-position: 0% 50%; }
   }
-  
 //bronze ends
+
+
+///tech starts
+
+.sponsors-section h3 {
+	background: linear-gradient(135deg,#00629B, 	#00629bdc, 	#00629b9f,#00629b70, #00629b4d);
+	background-size: 300% 300%;
+	color: white;
+	padding: 12px 24px;
+	text-align: center;
+	font-size: 2em;
+	font-weight: bold;
+	border-radius: 10px;
+	font-family: 'Playfair Display', serif;
+	box-shadow: 0 4px 15px rgba(165, 105, 25, 0.5);
+	position: relative;
+	overflow: hidden;
+  }
+/// Tech ends
+/// 
+
+
+
   .sponsor-category {
 	margin-bottom: 40px;
 	text-align: center;
