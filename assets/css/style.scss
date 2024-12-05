@@ -700,9 +700,9 @@ h4 { letter-spacing:0pt; background-color: #fff; color:$base-dark-color; font-we
 
 
   .announcement-section {
-	background-color: #ffebcc; /* Light golden background */
+
 	color: #333; /* Dark text for readability */
-	padding: 20px 20px 10px; /* Extra padding on top */
+	padding: 10px 10px 10px; /* Extra padding on top */
 	text-align: center;
 	font-family: 'Arial', sans-serif;
 	border-top: 3px solid #ffc107; /* Gold border on top */
@@ -711,13 +711,7 @@ h4 { letter-spacing:0pt; background-color: #fff; color:$base-dark-color; font-we
 	animation: slideDown 1s ease-in-out;
   }
   
-  .announcement-section h3 {
-	margin: 0 0 10px; /* Small space below the title */
-	font-size: 1.5em;
-	font-weight: bold;
-	color: #d48806; /* A darker gold color for the title */
-	text-transform: uppercase;
-  }
+
   
   .announcement-section p {
 	margin: 0;
